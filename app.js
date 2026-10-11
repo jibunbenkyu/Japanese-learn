@@ -1,4 +1,14 @@
 /* ===================== 預覽用邏輯 ===================== */
+/* ===== 瀏覽次數統計（GoatCounter，免 cookie） =====
+   到 goatcounter.com 免費註冊，把網站代號填在下面（例如 "japanese-nav"）。
+   留空就不會載入任何統計。有人進入首頁時只算一次瀏覽，不記錄頁面內的任何點擊。 */
+const GOATCOUNTER_CODE = "sstw99";
+if (GOATCOUNTER_CODE) {
+  const gc = document.createElement('script');
+  gc.async = true; gc.src = 'https://gc.zgo.at/count.js';
+  gc.dataset.goatcounter = `https://${GOATCOUNTER_CODE}.goatcounter.com/count`;
+  document.head.appendChild(gc);
+}
 const LEVEL_BRACKETS = [
   { key: "70+", label: "70以上", min: 70, max: Infinity },
   { key: "65-69", label: "65～69", min: 65, max: 69.999 },
