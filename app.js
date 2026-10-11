@@ -91,12 +91,12 @@ function setActive(i){
   clearScope();
 }
 function updatePlaceholder(){
-  q.placeholder = activeItem == null ? '試試搜尋「JLPT」、「N2」、「檢定」...' : `在${CATS[active].key}的「${rails[active][activeItem].label}」中搜尋`;
+  q.placeholder = activeItem == null ? '搜尋 JLPT、N2、檢定' : `在${CATS[active].key}的「${rails[active][activeItem].label}」中搜尋`;
 }
 function clearScope(){
   activeItem = null; scope.hidden = true;
   document.querySelectorAll('.rail-btn[aria-pressed="true"]').forEach(x=>x.setAttribute('aria-pressed','false'));
-  updatePlaceholder(); renderResults(); queueLens();
+  updatePlaceholder(); renderResults();
 }
 stage.addEventListener('click', e=>{
   const btn = e.target.closest('.rail-btn'); if(!btn) return;
@@ -104,7 +104,7 @@ stage.addEventListener('click', e=>{
   if (activeItem === j){ clearScope(); return; }
   btn.parentElement.querySelectorAll('.rail-btn').forEach(x=>x.setAttribute('aria-pressed', x===btn ? 'true':'false'));
   activeItem = j; scope.hidden = false; scope.textContent = rails[active][j].label + ' ×';
-  updatePlaceholder(); renderResults(); queueLens();
+  updatePlaceholder(); renderResults();
 });
 scope.addEventListener('click', ()=>{ clearScope(); q.focus(); });
 
@@ -209,20 +209,29 @@ function buildLens(){
 }
 function queueLens(){ cancelAnimationFrame(lensRaf); lensRaf = requestAnimationFrame(buildLens); }
 const isChromium = /Chrome|Chromium|Edg\//.test(navigator.userAgent) && !/OPR\/|Firefox/.test(navigator.userAgent);
-if (isChromium && CSS.supports('backdrop-filter','url(#lens)')){
+const finePointer = matchMedia('(hover:hover) and (pointer:fine)').matches;
+if (isChromium && finePointer && CSS.supports('backdrop-filter','url(#lens)')){
   glass.classList.add('lens');
   new ResizeObserver(queueLens).observe(glass);
   buildLens();
 }
 
-/* 滑動中隱藏搜尋框，停止後立刻顯示：優先用 scrollend，沒有就用 80ms 的短防抖 */
-let moveTimer = 0;
-const showSearch = () => { glass.classList.remove('moving'); resultsEl.classList.remove('moving'); };
-stage.addEventListener('scroll', () => {
-  glass.classList.add('moving'); resultsEl.classList.add('moving');
-  clearTimeout(moveTimer);
-  moveTimer = setTimeout(showSearch, 80);
-}, {passive:true});
-stage.addEventListener('scrollend', () => { clearTimeout(moveTimer); showSearch(); });
+/* 滑動中隱藏搜尋框，停止後再浮現。手指還按在螢幕上時保持隱藏，
+   避免手機上滑動停頓的空檔讓它反覆閃現；偏好減少動態的人不隱藏。 */
+const calmMotion = matchMedia('(prefers-reduced-motion: reduce)');
+let moveTimer = 0, touching = false, hiddenNow = false;
+function setHidden(h){
+  if (h === hiddenNow) return;
+  hiddenNow = h;
+  glass.classList.toggle('moving', h); resultsEl.classList.toggle('moving', h);
+}
+function settle(){ clearTimeout(moveTimer); if (!touching) setHidden(false); }
+function settleSoon(){ clearTimeout(moveTimer); moveTimer = setTimeout(settle, 140); }
+stage.addEventListener('scroll', () => { if (calmMotion.matches) return; setHidden(true); settleSoon(); }, {passive:true});
+stage.addEventListener('scrollend', settle);
+stage.addEventListener('touchstart', () => { touching = true; }, {passive:true});
+const release = () => { touching = false; if (hiddenNow) settleSoon(); };
+stage.addEventListener('touchend', release, {passive:true});
+stage.addEventListener('touchcancel', release, {passive:true});
 
 setActive(0);
