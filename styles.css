@@ -28,7 +28,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;-webki
        font-size:min(23dvh,21vw);color:var(--c-tone)}
 
 .intro{position:absolute;left:max(5vw,20px);top:96px;max-width:min(32ch,58vw);color:var(--c-ink)}
-.intro h2{font-family:"Noto Serif JP","Noto Serif TC",serif;font-size:clamp(1.7rem,4vw,2.3rem);font-weight:700;line-height:1.15;letter-spacing:-.015em}
+.intro h2{font-family:"Noto Serif JP","Noto Serif TC",serif;font-size:clamp(1.7rem,4vw,2.3rem);font-weight:700;line-height:1.15;letter-spacing:-.015em;text-wrap:balance}
 .intro .lead{margin-top:.7rem;font-size:1rem;max-width:30em}
 .facts{margin-top:1rem;display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;font-size:.86rem}
 .facts .count{margin-right:.2rem}
@@ -106,7 +106,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;-webki
 .res[data-cat="日語學習"]{border-left-color:var(--indigo-mid)}
 .res[data-cat="日語相關檢定"]{border-left-color:var(--seal)}
 .res[data-cat="日本留學"]{border-left-color:var(--gold)}
-.res[data-cat="日文閱讀與影音"]{border-left-color:var(--moss)}
+.res[data-cat="官方資源及升學管道"]{border-left-color:var(--moss)}
 .res{display:block;width:100%;text-align:left;cursor:pointer;transition:transform 100ms ease-out,border-color .15s}
 .res:hover{border-color:var(--gold)}
 .res:active{transform:scale(.985)}
@@ -127,16 +127,16 @@ dialog.detail::backdrop{background:rgba(22,36,63,.62);-webkit-backdrop-filter:bl
 .sheet[data-cat="日語學習"]{border-left-color:var(--indigo-mid)}
 .sheet[data-cat="日語相關檢定"]{border-left-color:var(--seal)}
 .sheet[data-cat="日本留學"]{border-left-color:var(--gold)}
-.sheet[data-cat="日文閱讀與影音"]{border-left-color:var(--moss)}
+.sheet[data-cat="官方資源及升學管道"]{border-left-color:var(--moss)}
 .sheet-head{position:sticky;top:0;z-index:1;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;
             padding:1.1rem 1.2rem .8rem;background:var(--paper-card);border-bottom:1px solid var(--line-on-paper)}
-.sheet-head h2{font-family:"Noto Serif JP","Noto Serif TC",serif;font-size:1.4rem;font-weight:700;line-height:1.25;letter-spacing:-.01em}
+.sheet-head h2{text-wrap:balance;font-family:"Noto Serif JP","Noto Serif TC",serif;font-size:1.4rem;font-weight:700;line-height:1.25;letter-spacing:-.01em}
 .sheet-head .meta{margin-top:.45rem;display:flex;flex-wrap:wrap;gap:.4rem}
 .close{flex:none;width:var(--tap-min);height:var(--tap-min);margin:-.4rem -.5rem 0 0;border-radius:var(--radius);display:grid;place-items:center;color:var(--ink-soft);transition:background .15s,transform 100ms ease-out}
 .close:hover{background:rgba(74,68,55,.08)}
 .close:active{transform:scale(.95)}
 .sheet-body{padding:1rem 1.2rem 1.3rem;display:flex;flex-direction:column;gap:1.1rem}
-.kv{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.9rem}
 .kv .big{font-family:"Noto Serif JP","Noto Serif TC",serif;font-size:1.7rem;font-weight:700;line-height:1.1;color:var(--ink-dark)}
 .lab{font-weight:600;font-size:.78rem;color:var(--ink-soft);margin-bottom:.35rem}
 .note-src{font-size:.74rem;color:var(--ink-soft);margin-top:.3rem}

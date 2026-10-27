@@ -2990,4 +2990,1317 @@ const RESOURCES = [
         }
     ]
 },
+    {
+        id: "koryu",
+        name: "公益財團法人日本台灣交流協會",
+        shortName: "交流協會",
+        officialUrl: "https://www.koryu.or.jp/tw/",
+        category: ["官方資源及升學管道"],
+        subcategory: ["官方機構"],
+        price: "免費",
+        priceDetail: "網站資訊可免費瀏覽；各項申請的費用請以官網公告為準。",
+        target: [
+            "需要查詢台日往來官方規定與說明的人",
+            "簽證與獎學金資訊",
+            "赴日留學相關計畫"
+        ],
+        strengths: [
+            "台灣與日本實質上的官方往來管道，各類規定及說明大部分都能在此找到",
+            "設有東京本部、台北事務所與高雄事務所",
+            "有中文版網站"
+        ],
+        weaknesses: [],
+        tags: ["台日交流協會", "日本台灣交流協會", "官方", "簽證", "獎學金", "升學", "留學", "規定"]
+    },
+    {
+        id: "study-in-japan",
+        name: "日本留學官方網站（STUDY in JAPAN）",
+        shortName: "留學官網",
+        officialUrl: "https://www.studyinjapan.go.jp/tc/planning/scholarships/jasso-scholarships/",
+        category: ["官方資源及升學管道"],
+        subcategory: ["官方網站"],
+        price: "免費",
+        priceDetail: "網站資訊可免費瀏覽；各項獎學金與申請的條件、費用請以官網公告為準。",
+        target: [
+            "規劃赴日留學的人",
+            "想查找學校與獎學金的人",
+            "想了解前人留學經驗與日本生活的人"
+        ],
+        strengths: [
+            "升學管道、前人赴日留學的經驗分享與各類生活資訊都能在此找到",
+            "日本政府授權的官方網站，有繁體中文版",
+            "可查找學校，以及地方政府、民間團體與學校自設的獎學金"
+        ],
+        weaknesses: [],
+        tags: ["日本留學官方網站", "STUDY in JAPAN", "JASSO", "獎學金", "留學", "升學", "生活資訊", "經驗分享", "官方"]
+    },
+];
+
+
+/* ===== DATA_BATCH_2: 第二批大學資料（37–46），原樣內嵌，由 app.js 合併進 RESOURCES ===== */
+const universities_37_46 = [
+
+  // =========================================================
+  // 37. 中央大學
+  // =========================================================
+  {
+    id: "chuo",
+    name: "中央大學",
+    officialUrl: "https://www.chuo-u.ac.jp/english/",
+
+    category: ["日本留學"],
+    subcategory: ["大學"],
+
+    fields: [
+      "法學",
+      "經濟",
+      "商學",
+      "文學",
+      "政治",
+      "國際經營",
+      "國際情報",
+      "理工",
+      "資訊",
+      "社會科學"
+    ],
+
+    level: "偏差值 52.5～62.5",
+
+    price: "約137.57萬～192.78萬日圓／初年度",
+
+    priceDetail:
+      "2027年度官方學費表。經濟學部初年度納付金1,375,700日圓、文學部1,360,700日圓；基幹理工、社會理工及先進理工約1,927,800日圓。實際金額依學部而異。",
+
+    target:
+      "適合對法律、經濟、商學、政治或資訊理工有興趣，希望在東京圈就讀私立大學的學生。",
+
+    strengths: [
+      "法學領域具有鮮明特色。",
+      "經濟、商學、國際與理工科系完整。",
+      "校友及企業就業資源豐富。"
+    ],
+
+    weaknesses: [
+      "私立大學學費高於一般國立大學。",
+      "不同學部校區不同，通勤規劃需要納入考量。",
+      "QS 2026 細分學科排名不宜直接等同於法律或商學領域的實際教學品質。"
+    ],
+
+    tags: [
+      "私立",
+      "東京",
+      "法學",
+      "經濟",
+      "商學",
+      "理工",
+      "資訊"
+    ],
+
+    academicRanking: {
+      source: "QS World University Rankings by Subject",
+      year: 2026,
+
+      subjects: {
+        "法律": {
+          qsSubject: "Law & Legal Studies",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "經濟學": {
+          qsSubject: "Economics & Econometrics",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "商學與管理": {
+          qsSubject: "Business & Management Studies",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "會計與金融": {
+          qsSubject: "Accounting & Finance",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "政治學": {
+          qsSubject: "Politics & International Studies",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "資訊／計算機": {
+          qsSubject: "Computer Science & Information Systems",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "數學": {
+          qsSubject: "Mathematics",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "物理": {
+          qsSubject: "Physics & Astronomy",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "現代語言": {
+          qsSubject: "Modern Languages",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        }
+      }
+    }
+  },
+
+
+  // =========================================================
+  // 38. 法政大學
+  // =========================================================
+  {
+    id: "hosei",
+    name: "法政大學",
+    officialUrl: "https://www.hosei.ac.jp/english/",
+
+    category: ["日本留學"],
+    subcategory: ["大學"],
+
+    fields: [
+      "法學",
+      "文學",
+      "經濟",
+      "經營",
+      "社會學",
+      "國際文化",
+      "人間環境",
+      "資訊",
+      "設計工學",
+      "理工",
+      "生命科學",
+      "全球教養"
+    ],
+
+    level: "偏差值 52.5～65.0",
+
+    price: "約90萬～150萬日圓／年（概估）",
+
+    priceDetail:
+      "法政大學已公告2027年度學部新生學費調整。各學部授業料、實驗實習費及設施設備費不同；此處為預算概估，正式使用前請依2027年度官方學費表填入各學部實際金額。",
+
+    target:
+      "適合想在東京就讀綜合型私立大學，並對法律、商管、社會、國際文化、資訊或理工有興趣的學生。",
+
+    strengths: [
+      "學科領域多元，文理兼備。",
+      "位於東京，企業實習與就業資源豐富。",
+      "具備國際文化、全球教養、人間環境等跨領域選擇。"
+    ],
+
+    weaknesses: [
+      "不同學部的校區與課程安排有差異。",
+      "2027年度學費已調整，預算應以最新官方表為準。",
+      "QS 2026 細分學科排名資料仍須逐項核對。"
+    ],
+
+    tags: [
+      "私立",
+      "東京",
+      "法學",
+      "商管",
+      "國際文化",
+      "資訊",
+      "理工"
+    ],
+
+    academicRanking: {
+      source: "QS World University Rankings by Subject",
+      year: 2026,
+
+      subjects: {
+        "法律": {
+          qsSubject: "Law & Legal Studies",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "經濟學": {
+          qsSubject: "Economics & Econometrics",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "商學與管理": {
+          qsSubject: "Business & Management Studies",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "社會學": {
+          qsSubject: "Sociology",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "政治學": {
+          qsSubject: "Politics & International Studies",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "心理學": {
+          qsSubject: "Psychology",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "資訊／計算機": {
+          qsSubject: "Computer Science & Information Systems",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "現代語言": {
+          qsSubject: "Modern Languages",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        }
+      }
+    }
+  },
+
+
+  // =========================================================
+  // 39. 立教大學
+  // =========================================================
+  {
+    id: "rikkyo",
+    name: "立教大學",
+    officialUrl: "https://english.rikkyo.ac.jp/",
+
+    category: ["日本留學"],
+    subcategory: ["大學"],
+
+    fields: [
+      "文學",
+      "經濟",
+      "經營",
+      "社會學",
+      "法學",
+      "國際",
+      "觀光",
+      "心理學",
+      "理學",
+      "環境",
+      "運動健康"
+    ],
+
+    level: "偏差值 57.5～65.0",
+
+    price: "約117萬～190萬日圓／年（依學部）",
+
+    priceDetail:
+      "立教大學已公布2027年度學費表，入學金與授業料維持2026年度水準，但部分實驗、實習費有調整。學部不同，費用差異相當明顯；初年度另有入學金及其他費用。",
+
+    target:
+      "適合偏好人文社會、國際、觀光、經營、心理或環境領域，並希望在東京就讀私立大學的學生。",
+
+    strengths: [
+      "觀光、異文化溝通、經營與人文社會領域具有特色。",
+      "池袋校區交通便利，都市生活機能佳。",
+      "具有國際交流與跨領域學習機會。"
+    ],
+
+    weaknesses: [
+      "私立大學學費較高。",
+      "不同學部的校區位置不完全相同。",
+      "如果目標是高度專門化的工程或大型理工研究環境，需要另外比較其他大學。"
+    ],
+
+    tags: [
+      "私立",
+      "東京",
+      "觀光",
+      "國際",
+      "經營",
+      "社會學",
+      "心理學",
+      "環境"
+    ],
+
+    academicRanking: {
+      source: "QS World University Rankings by Subject",
+      year: 2026,
+
+      subjects: {
+        "觀光與休閒管理": {
+          qsSubject: "Hospitality & Leisure Management",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "經濟學": {
+          qsSubject: "Economics & Econometrics",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "商學與管理": {
+          qsSubject: "Business & Management Studies",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "社會學": {
+          qsSubject: "Sociology",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "心理學": {
+          qsSubject: "Psychology",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "現代語言": {
+          qsSubject: "Modern Languages",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "教育": {
+          qsSubject: "Education & Training",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "環境科學": {
+          qsSubject: "Environmental Sciences",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "資訊／計算機": {
+          qsSubject: "Computer Science & Information Systems",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        }
+      }
+    }
+  },
+
+
+  // =========================================================
+  // 40. 關西大學
+  // =========================================================
+  {
+    id: "kansai",
+    name: "關西大學",
+    officialUrl: "https://www.kansai-u.ac.jp/English/",
+
+    category: ["日本留學"],
+    subcategory: ["大學"],
+
+    fields: [
+      "法學",
+      "文學",
+      "經濟",
+      "商學",
+      "社會學",
+      "政策",
+      "外語",
+      "心理學",
+      "理工",
+      "資訊",
+      "環境都市工學",
+      "化學生命工學"
+    ],
+
+    level: "偏差值 50.0～60.0",
+
+    price: "約90萬～140萬日圓／年（概估）",
+
+    priceDetail:
+      "目前可查得關西大學2026年度學費表；2027年度實際學費應以新生募集要項及官方學費表為準。理工、化學生命工學等學部的實驗及設施設備相關費用較高。",
+
+    target:
+      "適合想在大阪就讀私立綜合大學，並對法學、經濟、商學、社會、外語或理工有興趣的學生。",
+
+    strengths: [
+      "位於關西，就業與都市生活資源便利。",
+      "文法商、社會科學及理工科系選擇廣。",
+      "學科範圍涵蓋人文到工程。"
+    ],
+
+    weaknesses: [
+      "私立大學學費高於一般國立大學。",
+      "理工學部的實驗、設備及相關費用通常較高。",
+      "QS 2026 各細分學科排名需要以當年度榜單逐項確認。"
+    ],
+
+    tags: [
+      "私立",
+      "大阪",
+      "法學",
+      "經濟",
+      "商學",
+      "外語",
+      "社會",
+      "理工"
+    ],
+
+    academicRanking: {
+      source: "QS World University Rankings by Subject",
+      year: 2026,
+
+      subjects: {
+        "法律": {
+          qsSubject: "Law & Legal Studies",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "經濟學": {
+          qsSubject: "Economics & Econometrics",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "商學與管理": {
+          qsSubject: "Business & Management Studies",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "會計與金融": {
+          qsSubject: "Accounting & Finance",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "社會學": {
+          qsSubject: "Sociology",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "傳播與媒體研究": {
+          qsSubject: "Communication & Media Studies",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "資訊／計算機": {
+          qsSubject: "Computer Science & Information Systems",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "化學": {
+          qsSubject: "Chemistry",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "機械工程": {
+          qsSubject: "Mechanical, Aeronautical & Manufacturing Engineering",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "現代語言": {
+          qsSubject: "Modern Languages",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        }
+      }
+    }
+  },
+
+
+  // =========================================================
+  // 41. 大阪公立大學
+  // =========================================================
+  {
+    id: "osaka-metropolitan",
+    name: "大阪公立大學",
+    officialUrl: "https://www.omu.ac.jp/en/",
+
+    category: ["日本留學"],
+    subcategory: ["大學"],
+
+    fields: [
+      "文學",
+      "法學",
+      "經濟",
+      "商學",
+      "理學",
+      "工學",
+      "資訊",
+      "農學",
+      "獸醫",
+      "醫學",
+      "看護",
+      "生活科學",
+      "都市科學"
+    ],
+
+    level: "偏差值 52.5～67.5",
+
+    price: "535,800日圓／年",
+
+    priceDetail:
+      "2026年度官方學部授業料535,800日圓／年。2026年度入學料依大阪府民及其子女資格分為282,000日圓及382,000日圓；2027年度最新費用應以招生公告確認。",
+
+    target:
+      "適合希望就讀大阪大型公立綜合大學，並對經濟、商學、工程、資訊、醫學、農學或獸醫有興趣的學生。",
+
+    strengths: [
+      "2022年由大阪市立大學與大阪府立大學整併而成，學科資源廣。",
+      "涵蓋醫學、獸醫、農學、商管、理工及人文社會。",
+      "公立大學的學費通常比私立大學低。"
+    ],
+
+    weaknesses: [
+      "不同學部位於不同校區。",
+      "醫學、獸醫及部分理工科系入試競爭較高。",
+      "整併後的校園及組織架構需要事先了解。"
+    ],
+
+    tags: [
+      "公立",
+      "大阪",
+      "經濟",
+      "商學",
+      "資訊",
+      "醫學",
+      "獸醫",
+      "工程",
+      "農學"
+    ],
+
+    academicRanking: {
+      source: "QS World University Rankings by Subject",
+      year: 2026,
+
+      subjects: {
+        "物理與天文學": {
+          qsSubject: "Physics & Astronomy",
+          worldRank: "401-450",
+          japanRank: null,
+          status: "ranked"
+        },
+        "經濟學": {
+          qsSubject: "Economics & Econometrics",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "商學與管理": {
+          qsSubject: "Business & Management Studies",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "資訊／計算機": {
+          qsSubject: "Computer Science & Information Systems",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "醫學": {
+          qsSubject: "Medicine",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "農林": {
+          qsSubject: "Agriculture & Forestry",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "獸醫": {
+          qsSubject: "Veterinary Science",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "化學": {
+          qsSubject: "Chemistry",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "法律": {
+          qsSubject: "Law & Legal Studies",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "教育": {
+          qsSubject: "Education & Training",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        }
+      }
+    }
+  },
+
+
+  // =========================================================
+  // 42. 東京都立大學
+  // =========================================================
+  {
+    id: "tokyo-metropolitan",
+    name: "東京都立大學",
+    officialUrl: "https://www.tmu.ac.jp/english/",
+
+    category: ["日本留學"],
+    subcategory: ["大學"],
+
+    fields: [
+      "人文",
+      "社會科學",
+      "法學",
+      "經濟經營",
+      "理學",
+      "都市環境",
+      "建築",
+      "系統設計",
+      "資訊",
+      "健康福祉"
+    ],
+
+    level: "偏差值 52.5～60.0",
+
+    price: "約520,800日圓／年（以最新學費公告確認）",
+
+    priceDetail:
+      "公立大學，授業料與入學料依東京都立大學官方規定及入學者條件確認；東京都民與非東京都民的入學料可能不同。2027年度請以最新招生及學費頁面為準。",
+
+    target:
+      "適合想在東京就讀公立綜合大學，並對法律、經濟、都市規劃、建築、理工或健康福祉有興趣的學生。",
+
+    strengths: [
+      "位於東京，能接觸大城市的研究、企業及公共政策資源。",
+      "都市環境、建築、系統設計等領域有明確特色。",
+      "公立大學學費通常低於私立大學。"
+    ],
+
+    weaknesses: [
+      "主要校區分布不同，通學方式需仔細規劃。",
+      "部分專業課程的實驗與實習要求較高。",
+      "本次尚未確認足夠的 QS 2026 細分學科名次。"
+    ],
+
+    tags: [
+      "公立",
+      "東京",
+      "法學",
+      "經濟",
+      "都市環境",
+      "建築",
+      "系統設計",
+      "資訊"
+    ],
+
+    academicRanking: {
+      source: "QS World University Rankings by Subject",
+      year: 2026,
+
+      subjects: {
+        "經濟學": {
+          qsSubject: "Economics & Econometrics",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "法律": {
+          qsSubject: "Law & Legal Studies",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "建築與建成環境": {
+          qsSubject: "Architecture & Built Environment",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "地理": {
+          qsSubject: "Geography",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "資訊／計算機": {
+          qsSubject: "Computer Science & Information Systems",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "數學": {
+          qsSubject: "Mathematics",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "物理": {
+          qsSubject: "Physics & Astronomy",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "化學": {
+          qsSubject: "Chemistry",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "環境科學": {
+          qsSubject: "Environmental Sciences",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "心理學": {
+          qsSubject: "Psychology",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        }
+      }
+    }
+  },
+
+
+  // =========================================================
+  // 43. 橫濱市立大學
+  // =========================================================
+  {
+    id: "yokohama-city",
+    name: "橫濱市立大學",
+    officialUrl: "https://www.yokohama-cu.ac.jp/english/",
+
+    category: ["日本留學"],
+    subcategory: ["大學"],
+
+    fields: [
+      "國際教養",
+      "國際商學",
+      "經濟",
+      "資料科學",
+      "理學",
+      "醫學",
+      "看護",
+      "生命科學"
+    ],
+
+    level: "偏差值 52.5～67.5",
+
+    price: "557,400～573,000日圓／年（2026年度）",
+
+    priceDetail:
+      "2026年度官方授業料：國際教養、國際商學、理學、資料科學及醫學部看護學科年額557,400日圓；醫學科年額573,000日圓。入學料依申請人資格及居住條件不同，2027年度金額待最新公告確認。",
+
+    target:
+      "適合對國際事務、商學、資料科學、生物與醫學有興趣，希望在橫濱及東京圈發展的學生。",
+
+    strengths: [
+      "國際教養、國際商學與資料科學方向鮮明。",
+      "醫學及生命科學相關領域完整。",
+      "位於橫濱，生活與產業資源豐富。"
+    ],
+
+    weaknesses: [
+      "學科數量比大型綜合大學少。",
+      "醫學科與部分熱門學部入試競爭較高。",
+      "實際學費及入學料需區分學部與申請人資格。"
+    ],
+
+    tags: [
+      "公立",
+      "橫濱",
+      "國際",
+      "商學",
+      "資料科學",
+      "醫學",
+      "生命科學"
+    ],
+
+    academicRanking: {
+      source: "QS World University Rankings by Subject",
+      year: 2026,
+
+      subjects: {
+        "醫學": {
+          qsSubject: "Medicine",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "生物科學": {
+          qsSubject: "Biological Sciences",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "資料科學與人工智慧": {
+          qsSubject: "Data Science & Artificial Intelligence",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "經濟學": {
+          qsSubject: "Economics & Econometrics",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "商學與管理": {
+          qsSubject: "Business & Management Studies",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "化學": {
+          qsSubject: "Chemistry",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "生物醫學": {
+          qsSubject: "Life Sciences & Medicine",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        }
+      }
+    }
+  },
+
+
+  // =========================================================
+  // 44. 京都工藝纖維大學
+  // =========================================================
+  {
+    id: "kyoto-institute-technology",
+    name: "京都工藝纖維大學",
+    officialUrl: "https://www.kit.ac.jp/en/",
+
+    category: ["日本留學"],
+    subcategory: ["大學"],
+
+    fields: [
+      "建築",
+      "設計",
+      "材料科學",
+      "化學",
+      "化學工程",
+      "機械",
+      "電機電子",
+      "資訊",
+      "環境",
+      "地球科學",
+      "物理"
+    ],
+
+    level: "偏差值 52.5～55.0",
+
+    price: "535,800日圓／年",
+
+    priceDetail:
+      "官方學部授業料535,800日圓／年、入學料282,000日圓。若入學後學費政策調整，以學校公告為準。",
+
+    target:
+      "適合想專攻工程、建築、材料、化學、設計、環境及自然科學的學生。",
+
+    strengths: [
+      "工程與自然科學研究特色鮮明。",
+      "QS 2026 多個細分學科具有明確世界及日本名次。",
+      "國立大學學費相對私立便宜。"
+    ],
+
+    weaknesses: [
+      "學科重心偏向工學、設計與自然科學。",
+      "人文、法律、商學等領域選擇較少。",
+      "研究導向較強，選系時應仔細看課程內容。"
+    ],
+
+    tags: [
+      "國立",
+      "京都",
+      "工程",
+      "建築",
+      "設計",
+      "材料",
+      "化學",
+      "環境"
+    ],
+
+    academicRanking: {
+      source: "QS World University Rankings by Subject",
+      year: 2026,
+
+      subjects: {
+        "自然科學": {
+          qsSubject: "Natural Sciences",
+          worldRank: "52",
+          japanRank: 3,
+          status: "ranked"
+        },
+        "工程科學": {
+          qsSubject: "Engineering Sciences",
+          worldRank: "42",
+          japanRank: 2,
+          status: "ranked"
+        },
+        "建築與建成環境": {
+          qsSubject: "Architecture & Built Environment",
+          worldRank: "51-100",
+          japanRank: 3,
+          status: "ranked"
+        },
+        "化學工程": {
+          qsSubject: "Chemical Engineering",
+          worldRank: "25",
+          japanRank: 1,
+          status: "ranked"
+        },
+        "化學": {
+          qsSubject: "Chemistry",
+          worldRank: "50",
+          japanRank: 2,
+          status: "ranked"
+        },
+        "土木與結構工程": {
+          qsSubject: "Civil & Structural Engineering",
+          worldRank: "51-100",
+          japanRank: 2,
+          status: "ranked"
+        },
+        "電機電子工程": {
+          qsSubject: "Electrical & Electronic Engineering",
+          worldRank: "52",
+          japanRank: 3,
+          status: "ranked"
+        },
+        "環境科學": {
+          qsSubject: "Environmental Sciences",
+          worldRank: "81",
+          japanRank: 2,
+          status: "ranked"
+        },
+        "地質學": {
+          qsSubject: "Geology",
+          worldRank: "51-100",
+          japanRank: 2,
+          status: "ranked"
+        },
+        "地球物理學": {
+          qsSubject: "Geophysics",
+          worldRank: "51-100",
+          japanRank: 3,
+          status: "ranked"
+        },
+        "資訊／計算機": {
+          qsSubject: "Computer Science & Information Systems",
+          worldRank: "110",
+          japanRank: 4,
+          status: "ranked"
+        },
+        "圖書資訊管理": {
+          qsSubject: "Library & Information Management",
+          worldRank: "51-100",
+          japanRank: 2,
+          status: "ranked"
+        },
+        "材料科學": {
+          qsSubject: "Materials Sciences",
+          worldRank: "26",
+          japanRank: 1,
+          status: "ranked"
+        },
+        "機械工程": {
+          qsSubject: "Mechanical Engineering",
+          worldRank: "32",
+          japanRank: 3,
+          status: "ranked"
+        },
+        "物理": {
+          qsSubject: "Physics",
+          worldRank: "55",
+          japanRank: 4,
+          status: "ranked"
+        },
+        "礦物與採礦工程": {
+          qsSubject: "Mineral & Mining Engineering",
+          worldRank: "51-100",
+          japanRank: 3,
+          status: "ranked"
+        }
+      }
+    }
+  },
+
+
+  // =========================================================
+  // 45. 國際基督教大學（ICU）
+  // =========================================================
+  {
+    id: "icu",
+    name: "國際基督教大學",
+    officialUrl: "https://www.icu.ac.jp/en/",
+
+    category: ["日本留學"],
+    subcategory: ["大學"],
+
+    fields: [
+      "人文",
+      "社會科學",
+      "經濟",
+      "政治",
+      "國際關係",
+      "語言",
+      "心理學",
+      "教育",
+      "數學",
+      "自然科學",
+      "資料科學"
+    ],
+
+    level: "偏差值 67.5",
+
+    price: "1,557,000日圓／年（2027年度學費及設施費合計）",
+
+    priceDetail:
+      "ICU官方已公布2027年度教養學部授業料1,203,000日圓、設施費354,000日圓，合計1,557,000日圓／年。入學金另計300,000日圓，實驗、材料及其他費用可能另外收取。",
+
+    target:
+      "適合喜歡跨領域學習、英文閱讀與討論、國際關係、人文社會科學，且希望保留多種專業選擇的學生。",
+
+    strengths: [
+      "教養學部採跨領域的 Liberal Arts 教育。",
+      "英文與日文學習環境並存，適合希望提升雙語能力的學生。",
+      "適合尚未完全決定主修方向、希望探索不同領域的人。"
+    ],
+
+    weaknesses: [
+      "學費高於大多數國立大學。",
+      "以教養教育為主，並非傳統大型綜合大學那種多學部架構。",
+      "英文閱讀、寫作與自主學習需求較高。"
+    ],
+
+    tags: [
+      "私立",
+      "東京",
+      "國際",
+      "教養教育",
+      "英文授課",
+      "跨領域",
+      "人文",
+      "社會科學"
+    ],
+
+    academicRanking: {
+      source: "QS World University Rankings by Subject",
+      year: 2026,
+
+      subjects: {
+        "人文科學": {
+          qsSubject: "Arts & Humanities",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "政治／國際關係": {
+          qsSubject: "Politics & International Studies",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "經濟學": {
+          qsSubject: "Economics & Econometrics",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "社會學": {
+          qsSubject: "Sociology",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "哲學": {
+          qsSubject: "Philosophy",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "心理學": {
+          qsSubject: "Psychology",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "語言學": {
+          qsSubject: "Linguistics",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "教育": {
+          qsSubject: "Education & Training",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "數學": {
+          qsSubject: "Mathematics",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "生物科學": {
+          qsSubject: "Biological Sciences",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        }
+      }
+    }
+  },
+
+
+  // =========================================================
+  // 46. 東京海洋大學
+  // =========================================================
+  {
+    id: "tokyo-university-marine-science-technology",
+    name: "東京海洋大學",
+    officialUrl: "https://www.kaiyodai.ac.jp/en/",
+
+    category: ["日本留學"],
+    subcategory: ["大學"],
+
+    fields: [
+      "海洋科學",
+      "海洋生物",
+      "水產",
+      "食品科學",
+      "環境科學",
+      "海洋資源",
+      "海洋工程",
+      "航運",
+      "物流",
+      "資訊"
+    ],
+
+    level: "偏差值 50.0～60.0",
+
+    price: "2027年度學費待官方確認",
+
+    priceDetail:
+      "國立大學。請以東京海洋大學2027年度入學者的募集要項及學費公告核對授業料與入學料；本筆暫不沿用其他國立大學的標準金額，以免將不同學校的學費調整政策混為一談。",
+
+    target:
+      "適合對海洋、生物資源、水產、食品、環境、船舶、海運或物流有興趣的學生。",
+
+    strengths: [
+      "海洋、水產、海洋生物與航運領域定位明確。",
+      "適合希望投入海洋資源、食品、環境及海事產業的學生。",
+      "具有不同於一般綜合大學的專業教育方向。"
+    ],
+
+    weaknesses: [
+      "科系選擇集中在海洋及相關產業。",
+      "若想主修法律、一般商管或人文，選擇相對有限。",
+      "學費與入學費應以當年度官方資料確認。"
+    ],
+
+    tags: [
+      "國立",
+      "海洋",
+      "水產",
+      "食品科學",
+      "環境",
+      "航運",
+      "物流",
+      "生物資源"
+    ],
+
+    academicRanking: {
+      source: "QS World University Rankings by Subject",
+      year: 2026,
+
+      subjects: {
+        "農林": {
+          qsSubject: "Agriculture & Forestry",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "生物科學": {
+          qsSubject: "Biological Sciences",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "地球與海洋科學": {
+          qsSubject: "Earth & Marine Sciences",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "環境科學": {
+          qsSubject: "Environmental Sciences",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "食品科學": {
+          qsSubject: "Food Science",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "化學": {
+          qsSubject: "Chemistry",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "資訊／計算機": {
+          qsSubject: "Computer Science & Information Systems",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "工程": {
+          qsSubject: "Engineering & Technology",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        },
+        "機械工程": {
+          qsSubject: "Mechanical Engineering",
+          worldRank: null,
+          japanRank: null,
+          status: "unranked"
+        }
+      }
+    }
+  }
+
 ];

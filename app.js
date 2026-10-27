@@ -1,4 +1,22 @@
 /* ===================== 預覽用邏輯 ===================== */
+/* ===== 合併第二批大學資料：欄位轉成與前 36 所一致，原始資料不更動 =====
+   - level 去掉「偏差值」前綴（畫面會自己補）
+   - price 的金額文字移到費用說明，價格標籤統一為「付費」
+   - academicRanking 轉成 qsRankings，只保留有名次的學科 */
+function normalizeUniversity(u){
+  const ranked = Object.entries((u.academicRanking && u.academicRanking.subjects) || {})
+    .filter(([, v]) => v.status === 'ranked' || v.worldRank || v.japanRank)
+    .map(([subject, v]) => ({ subject, worldRank: v.worldRank, japanRank: v.japanRank }));
+  return {
+    ...u,
+    level: String(u.level || '').replace(/^偏差值\s*/, ''),
+    price: '付費',
+    priceDetail: (u.priceDetail || '').includes(u.price) ? u.priceDetail : [u.price, u.priceDetail].filter(Boolean).join('。'),
+    qsRankings: ranked,
+  };
+}
+if (typeof universities_37_46 !== 'undefined') RESOURCES.push(...universities_37_46.map(normalizeUniversity));
+
 /* ===== 瀏覽次數統計（GoatCounter，免 cookie） =====
    到 goatcounter.com 免費註冊，把網站代號填在下面（例如 "japanese-nav"）。
    留空就不會載入任何統計。有人進入首頁時只算一次瀏覽，不記錄頁面內的任何點擊。 */
@@ -22,7 +40,9 @@ const LEVEL_BRACKETS = [
 function parseLevelRange(res){
   if (!res.level || typeof res.level !== "string") return null;
   const m = res.level.match(/([\d.]+)\s*[～~]\s*([\d.]+)/);
-  return m ? { min: parseFloat(m[1]), max: parseFloat(m[2]) } : null;
+  if (m) return { min: parseFloat(m[1]), max: parseFloat(m[2]) };
+  const one = res.level.match(/^\s*([\d.]+)\s*$/);
+  return one ? { min: parseFloat(one[1]), max: parseFloat(one[1]) } : null;
 }
 function matchesLevelBracket(res, b){ const r = parseLevelRange(res); return !!r && r.max >= b.min && r.min <= b.max; }
 function formatLevel(l){ if(!l) return "不限程度"; return Array.isArray(l) ? (l.length ? l.join("、") : "不限程度") : String(l); }
@@ -39,8 +59,8 @@ const CATS = [
    lead:"JLPT、BJT、J.TEST、JFT-Basic 的報名方式、時間與費用，一次比較。"},
   {key:"日本留學",       tab:"留學", giant:"日本留學", bg:"#c6a15b", tone:"#d3b374", ink:"#1e1b16", accent:"#16243f", on:"#f1ead9", glass:LIGHT_GLASS,
    lead:"日本各大學的偏差值區間、科系與入學管道，依程度篩選。"},
-  {key:"日文閱讀與影音", tab:"影音", giant:"閱讀影音", bg:"#4f6b52", tone:"#5f7d63", ink:"#f1ead9", accent:"#e0d5b8", on:"#1e1b16", glass:DARK_GLASS,
-   lead:"這個分類還沒有收錄資源，整理完成後會出現在這裡。"},
+  {key:"官方資源及升學管道", tab:"官方", giant:"官方升學", bg:"#4f6b52", tone:"#5f7d63", ink:"#f1ead9", accent:"#e0d5b8", on:"#1e1b16", glass:DARK_GLASS,
+   lead:"收錄台日往來與升學相關的官方機構與管道。"},
 ];
 const inCat = key => RESOURCES.filter(r => r.category.includes(key));
 
@@ -59,7 +79,7 @@ function railFor(c){
     return LEVEL_BRACKETS.map(b => ({ id:b.key, glyph:b.label, sub:`${rs.filter(r => matchesLevelBracket(r,b)).length} 所`,
       test:r => matchesLevelBracket(r,b), label:`偏差值 ${b.label}` }));
   }
-  return [];
+  return rs.map(r => ({ id:r.id, glyph:r.shortName || r.name, sub:r.subcategory.join('、'), test:x => x.id === r.id, label:r.shortName || r.name }));
 }
 function subcats(rs){ return [...new Set(rs.flatMap(r => r.subcategory))]; }
 
@@ -122,6 +142,7 @@ scope.addEventListener('click', ()=>{ clearScope(); q.focus(); });
 function haystack(r){
   return [r.name, r.target, r.priceDetail || "", ...r.category, ...r.subcategory, ...[].concat(r.level || []),
           ...(r.tags||[]), ...(r.strengths||[]), ...(r.weaknesses||[]),
+          ...((r.fields||[]).map(f => typeof f === 'string' ? f : f.name)),
           ...((r.qsRankings||[]).map(x => x.subject || ""))].join(" ").toLowerCase();
 }
 function renderResults(){
@@ -136,7 +157,7 @@ function renderResults(){
     ? `<p class="rc">符合 ${list.length} 筆${list.length > limit ? `，先列出前 ${limit} 筆` : ''}，點選卡片看詳細資訊</p>` + list.slice(0, limit).map(r => `
         <button type="button" class="res" data-id="${esc(r.id)}" data-cat="${esc(r.category[0])}">
           <span class="row"><span class="name">${esc(r.name)}</span><span class="pill ${priceClass(r.price)}">${esc(r.price)}</span></span>
-          <span class="meta"><span class="pill sub">${esc(r.subcategory.join('、'))}</span><span>${r.category[0] === '日本留學' ? '偏差值 ' : ''}${esc(formatLevel(r.level))}</span></span>
+          <span class="meta"><span class="pill sub">${esc(r.subcategory.join('、'))}</span>${r.level && r.level.length ? `<span>${r.category[0] === '日本留學' ? '偏差值 ' : ''}${esc(formatLevel(r.level))}</span>` : ''}</span>
         </button>`).join('')
     : `<div class="empty-state">沒有符合的資源，換個關鍵字，或清除小類別再試一次。</div>`;
 }
@@ -144,7 +165,7 @@ function renderResults(){
 /* ---------- 詳細資訊面板 ---------- */
 const detail = document.getElementById('detail');
 let lastTrigger = null;
-const rankNum = v => { const n = parseInt(String(v || '').replace(/\D/g, ''), 10); return Number.isNaN(n) ? 9999 : n; };
+const rankNum = v => { const m = String(v || '').match(/\d+/); return m ? parseInt(m[0], 10) : 9999; };
 const li = a => (a || []).map(x => `<li>${esc(x)}</li>`).join('');
 function openDetail(id, trigger){
   const r = RESOURCES.find(x => x.id === id); if (!r) return;
@@ -169,21 +190,21 @@ function openDetail(id, trigger){
       </header>
       <div class="sheet-body">
         <div class="kv">
-          <div><div class="lab">${isUni ? '偏差值' : '程度'}</div><div class="big">${esc(formatLevel(r.level))}</div>${isUni ? `<p class="note-src">資料來源：河合塾 Kei-Net　2027年度　一般選拔</p>` : ''}</div>
+          ${r.level && r.level.length ? `<div><div class="lab">${isUni ? '偏差值' : '程度'}</div><div class="big">${esc(formatLevel(r.level))}</div>${isUni ? `<p class="note-src">資料來源：河合塾 Kei-Net　2027年度　一般選拔</p>` : ''}</div>` : ''}
           <div><div class="lab">費用</div><p class="txt">${esc(r.priceDetail || r.price)}</p></div>
         </div>
         ${note}
         ${reg}
-        ${r.target ? `<div><div class="lab">適合對象</div><div class="tags-row">${[].concat(r.target).map(x => `<span class="tag">${esc(x)}</span>`).join('')}</div></div>` : ''}
+        ${r.target ? `<div><div class="lab">適合對象</div>${Array.isArray(r.target) ? `<div class="tags-row">${r.target.map(x => `<span class="tag">${esc(x)}</span>`).join('')}</div>` : `<p class="txt">${esc(r.target)}</p>`}</div>` : ''}
         ${fields.length ? `<div><div class="lab">可報考科系領域</div><div class="tags-row">${fields.map(f => `<span class="tag field">${esc(f.name)}</span>`).join('')}</div></div>` : ''}
         ${qs.length ? `<div><div class="lab">QS 學科排名</div>
           <div class="qs" role="table"><span class="h">學科</span><span class="h r">世界</span><span class="h r">${hasJp ? '日本' : ''}</span>
             ${qs.map((x,i) => `<span>${esc(x.subject)}</span><span class="r ${i < 3 ? 'top3' : ''}">${esc(x.worldRank || '—')}</span><span class="r">${hasJp ? esc(x.japanRank || '—') : ''}</span>`).join('')}
           </div></div>` : ''}
-        <div class="pc">
-          <div class="p"><div class="lab">優點</div><ul>${li(r.strengths)}</ul></div>
-          <div class="c"><div class="lab">缺點</div><ul>${li(r.weaknesses)}</ul></div>
-        </div>
+        ${(r.strengths || []).length || (r.weaknesses || []).length ? `<div class="pc">
+          ${(r.strengths || []).length ? `<div class="p"><div class="lab">優點</div><ul>${li(r.strengths)}</ul></div>` : ''}
+          ${(r.weaknesses || []).length ? `<div class="c"><div class="lab">缺點</div><ul>${li(r.weaknesses)}</ul></div>` : ''}
+        </div>` : ''}
         <div class="links">
           ${r.officialUrl ? `<a class="btn main" href="${esc(r.officialUrl)}" target="_blank" rel="noopener noreferrer">前往官網</a>` : ''}
           ${r.admissionPdfUrl ? `<a class="btn line" href="${esc(r.admissionPdfUrl)}" target="_blank" rel="noopener noreferrer">入學簡章 PDF</a>` : ''}
