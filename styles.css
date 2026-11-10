@@ -140,6 +140,7 @@ dialog.detail::backdrop{background:rgba(22,36,63,.62);-webkit-backdrop-filter:bl
 .kv .big{font-family:"Noto Serif JP","Noto Serif TC",serif;font-size:1.7rem;font-weight:700;line-height:1.1;color:var(--ink-dark)}
 .lab{font-weight:600;font-size:.78rem;color:var(--ink-soft);margin-bottom:.35rem}
 .note-src{font-size:.74rem;color:var(--ink-soft);margin-top:.3rem}
+.note-src.disclaimer{font-size:.8rem;margin-top:.9rem;text-align:center}
 .sheet p.txt{font-size:.9rem;color:var(--ink-dark)}
 .tags-row{display:flex;flex-wrap:wrap;gap:.4rem}
 .sheet .tag{padding:.18rem .6rem;border-radius:999px;background:#e9e0c8;color:var(--ink-soft);font-size:.8rem}

@@ -60,7 +60,7 @@ const CATS = [
   {key:"日本留學",       tab:"留學", giant:"日本留學", bg:"#c6a15b", tone:"#d3b374", ink:"#1e1b16", accent:"#16243f", on:"#f1ead9", glass:LIGHT_GLASS,
    lead:"日本各大學的偏差值區間、科系與入學管道，依程度篩選。"},
   {key:"官方資源及升學管道", tab:"官方", giant:"官方升學", bg:"#4f6b52", tone:"#5f7d63", ink:"#f1ead9", accent:"#e0d5b8", on:"#1e1b16", glass:DARK_GLASS,
-   lead:"收錄台日往來與升學相關的官方機構與管道。"},
+   lead:"官方機構與網站，以及各種入學方式的優缺點與報名網站。"},
 ];
 const inCat = key => RESOURCES.filter(r => r.category.includes(key));
 
@@ -121,7 +121,7 @@ function setActive(i){
   clearScope();
 }
 function updatePlaceholder(){
-  q.placeholder = activeItem == null ? '搜尋 JLPT、N2、檢定' : `在${CATS[active].key}的「${rails[active][activeItem].label}」中搜尋`;
+  q.placeholder = activeItem == null ? ({'日語學習':'搜尋 辭典、單字、文法','日語相關檢定':'搜尋 JLPT、N2、檢定','日本留學':'搜尋 校名、科系、偏差值','官方資源及升學管道':'搜尋 EJU、獎學金、渡日前'}[CATS[active].key] || '搜尋') : `在${CATS[active].key}的「${rails[active][activeItem].label}」中搜尋`;
 }
 function clearScope(){
   activeItem = null; scope.hidden = true;
@@ -208,7 +208,9 @@ function openDetail(id, trigger){
         <div class="links">
           ${r.officialUrl ? `<a class="btn main" href="${esc(r.officialUrl)}" target="_blank" rel="noopener noreferrer">前往官網</a>` : ''}
           ${r.admissionPdfUrl ? `<a class="btn line" href="${esc(r.admissionPdfUrl)}" target="_blank" rel="noopener noreferrer">入學簡章 PDF</a>` : ''}
+          ${(r.extraLinks || []).map(l => `<a class="btn line" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">${esc(l.label)}</a>`).join('')}
         </div>
+        <p class="note-src disclaimer">資料來源可能有誤，如有興趣請親自至官網驗證。</p>
       </div>
     </article>`;
   detail.showModal();

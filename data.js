@@ -357,6 +357,11 @@ const RESOURCES = [
     id: "u-tokyo",
     name: "東京大学",
     officialUrl: "https://www.u-tokyo.ac.jp/",
+    admissionYear: 2027,
+    admissionType: '外国学校卒業学生特別選考（第1種：私費留学生）',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.u-tokyo.ac.jp/ja/admissions/undergraduate/e01_02_04.html',
+    admissionNote: '2027年度募集要項已公布；此校採「外国学校卒業学生特別選考」，不是一般私費外国人留學生選拔。既有PDF連結保留，申請前仍須回官方頁確認最新修訂。',
     category: ["日本留學"],
     subcategory: ["大學"],
     fields: [{ name: "文學", worldRank: null, japanRank: null }, { name: "法律", worldRank: null, japanRank: null }, { name: "經濟", worldRank: null, japanRank: null }, { name: "商管", worldRank: null, japanRank: null }, { name: "理工", worldRank: null, japanRank: null }, { name: "醫學", worldRank: null, japanRank: null }, { name: "農學", worldRank: null, japanRank: null }, { name: "藥學", worldRank: null, japanRank: null }, { name: "資訊", worldRank: null, japanRank: null }],
@@ -396,6 +401,12 @@ const RESOURCES = [
     id: "kyoto-u",
     name: "京都大学",
     officialUrl: "https://www.kyoto-u.ac.jp/",
+    admissionYear: 2027,
+    admissionType: '學部／英語學位課程分別確認',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.kyoto-u.ac.jp/ja/admissions/undergrad/requirements',
+    admissionPdfUrl: "https://www.t.kyoto-u.ac.jp/ja/admissions/international/exam2/43adcw.pdf",
+    admissionNote: "此PDF僅為工學部（地球工學科、建築學科、物理工學科、電氣電子工學科、理工化學科）2027年度私費外国人留学生特別選考出願要項；正式出願2026/12/15–17。京都大學無全校通用的私費外國人留學生選拔，其他學部請查各學部公告與全校入學者選抜要項。",
     category: ["日本留學"],
     subcategory: ["大學"],
     fields: [{ name: "文學", worldRank: null, japanRank: null }, { name: "教育", worldRank: null, japanRank: null }, { name: "法律", worldRank: null, japanRank: null }, { name: "經濟", worldRank: null, japanRank: null }, { name: "理工", worldRank: null, japanRank: null }, { name: "醫學", worldRank: null, japanRank: null }, { name: "藥學", worldRank: null, japanRank: null }, { name: "農學", worldRank: null, japanRank: null }],
@@ -434,6 +445,12 @@ const RESOURCES = [
     id: "osaka-u",
     name: "大阪大学",
     officialUrl: "https://www.osaka-u.ac.jp/",
+    admissionYear: 2027,
+    admissionType: '私費外国人留学生特別入試',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.osaka-u.ac.jp/ja/admissions/faculty/expense/index2.html',
+    admissionPdfUrl: 'https://www.osaka-u.ac.jp/ja/admissions/faculty/expense/files/2027shihi_guideline.pdf/@@download/file',
+    admissionNote: '2027年度私費外国人留学生特別入試學生募集要項，官方頁標示2026年9月發行。',
     category: ["日本留學"],
     subcategory: ["大學"],
     fields: [{ name: "文學", worldRank: null, japanRank: null }, { name: "人文", worldRank: null, japanRank: null }, { name: "法律", worldRank: null, japanRank: null }, { name: "經濟", worldRank: null, japanRank: null }, { name: "理工", worldRank: null, japanRank: null }, { name: "醫學", worldRank: null, japanRank: null }, { name: "藥學", worldRank: null, japanRank: null }, { name: "資訊", worldRank: null, japanRank: null }, { name: "基礎科學", worldRank: null, japanRank: null }],
@@ -468,6 +485,12 @@ const RESOURCES = [
     id: "hit-u",
     name: "一橋大学",
     officialUrl: "https://www.hit-u.ac.jp/",
+    admissionYear: 2027,
+    admissionType: '私費外国人留学生選抜',
+    admissionStatus: 'published',
+    admissionUrl: 'https://juken.hit-u.ac.jp/admission/info/guidelines/',
+    admissionPdfUrl: "https://juken.hit-u.ac.jp/admission/info/guidelines/files/R9ryuugaku_youkou.pdf",
+    admissionNote: "令和9（2027）年度一橋大学私費外国人留学生選抜募集要項（商、經濟、法、社會四學部）。",
     category: ["日本留學"],
     subcategory: ["大學"],
     fields: [{ name: "經濟", worldRank: null, japanRank: null }, { name: "商管", worldRank: null, japanRank: null }, { name: "法律", worldRank: null, japanRank: null }, { name: "社會科學", worldRank: null, japanRank: null }, { name: "社會數據科學", worldRank: null, japanRank: null }],
@@ -499,6 +522,12 @@ const RESOURCES = [
     id: "isct",
     name: "東京科学大学",
     officialUrl: "https://www.isct.ac.jp/",
+    admissionYear: 2027,
+    admissionType: '私費外国人留学生特別選抜（理工學系）',
+    admissionStatus: 'published',
+    admissionUrl: 'https://admissions.isct.ac.jp/ja/013/undergraduate/guideline',
+    admissionPdfUrl: 'https://admissions.isct.ac.jp/plugins/cms/component_download_file.php?contentsDataId=&contentsId=&fileName=r9-guidelines-shihi&key=70c4d184bd628fd72ea51dfb40ef847e.pdf&pageId=3088&prevId=&type=1',
+    admissionNote: '此PDF為理工學系（舊東京工業大學）2027年度要項；醫歯學系有另一份獨立要項，不能視為全校共用。',
     category: ["日本留學"],
     subcategory: ["大學"],
     fields: [{ name: "理工", worldRank: null, japanRank: null }, { name: "資訊", worldRank: null, japanRank: null }, { name: "數學", worldRank: null, japanRank: null }, { name: "物理", worldRank: null, japanRank: null }, { name: "化學", worldRank: null, japanRank: null }, { name: "生命科學", worldRank: null, japanRank: null }, { name: "醫學", worldRank: null, japanRank: null }, { name: "牙醫", worldRank: null, japanRank: null }, { name: "建築", worldRank: null, japanRank: null }],
@@ -537,6 +566,12 @@ const RESOURCES = [
     id: "nagoya-u",
     name: "名古屋大学",
     officialUrl: "https://www.nagoya-u.ac.jp/",
+    admissionYear: 2027,
+    admissionType: '私費外国人留学生選抜',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.nagoya-u.ac.jp/admissions/exam/us-exam/cat2/index.html',
+    admissionPdfUrl: "https://www.nagoya-u.ac.jp/admissions/exam/upload/2027_shihi_yoko.pdf",
+    admissionNote: "2027年度私費外国人留学生入試學生募集要項（2026年9月公布）；涵蓋文、教育、法、經濟、情報、理、醫、農，工學部令和9年度不招生。網路登錄2026/11/24–12/3。2028年起預計廢除以EJU為主的入試管道，實際變動請以官網為準。",
     category: ["日本留學"],
     subcategory: ["大學"],
     fields: [{ name: "教育学部", worldRank: null, japanRank: null }, { name: "情報学部", worldRank: null, japanRank: null }, { name: "理学部", worldRank: null, japanRank: null }, { name: "経済学部", worldRank: null, japanRank: null }, { name: "文学部", worldRank: null, japanRank: null }, { name: "法学部", worldRank: null, japanRank: null }, { name: "医学部医学科", worldRank: null, japanRank: null }, { name: "医学部保健学科", worldRank: null, japanRank: null }, { name: "農学部", worldRank: null, japanRank: null }],
@@ -575,6 +610,12 @@ const RESOURCES = [
     id: "tohoku-u",
     name: "東北大学",
     officialUrl: "https://www.tohoku.ac.jp/",
+    admissionYear: 2027,
+    admissionType: '私費外国人留学生入試（全學部）',
+    admissionStatus: 'published',
+    admissionUrl: 'https://admissions.tohoku.ac.jp/ja/entrance-info/undergraduate-info/admissions_sp/',
+    admissionPdfUrl: 'https://admissions.tohoku.ac.jp/ja/adcms/wp-content/uploads/2026/08/r9Shihi_Application-Guidelines.pdf',
+    admissionNote: '2027年度全學部私費外国人留学生入試募集要項PDF，官方頁標示2026年9月30日更新。',
     category: ["日本留學"],
     subcategory: ["大學"],
     fields: [{ name: "文學", worldRank: null, japanRank: null }, { name: "教育", worldRank: null, japanRank: null }, { name: "法律", worldRank: null, japanRank: null }, { name: "經濟", worldRank: null, japanRank: null }, { name: "理工", worldRank: null, japanRank: null }, { name: "資訊", worldRank: null, japanRank: null }, { name: "醫學", worldRank: null, japanRank: null }, { name: "農學", worldRank: null, japanRank: null }],
@@ -613,6 +654,12 @@ const RESOURCES = [
     id: "hokudai",
     name: "北海道大学",
     officialUrl: "https://www.hokudai.ac.jp/",
+    admissionYear: 2027,
+    admissionType: '私費外国人留学生（學部）入試',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.hokudai.ac.jp/admission/faculty/intl-private/',
+    admissionPdfUrl: "https://www.hokudai.ac.jp/admission/shihi_admissionR09.pdf",
+    admissionNote: "令和9（2027）年度私費外国人留学生入試學生募集要項（學部，全校通用），2026年5月29日公布。",
     category: ["日本留學"],
     subcategory: ["大學"],
     fields: [{ name: "文學", worldRank: null, japanRank: null }, { name: "教育", worldRank: null, japanRank: null }, { name: "法律", worldRank: null, japanRank: null }, { name: "經濟", worldRank: null, japanRank: null }, { name: "理工", worldRank: null, japanRank: null }, { name: "資訊", worldRank: null, japanRank: null }, { name: "農學", worldRank: null, japanRank: null }, { name: "醫學", worldRank: null, japanRank: null }, { name: "獸醫", worldRank: null, japanRank: null }],
@@ -648,6 +695,12 @@ const RESOURCES = [
     id: "kyushu-u",
     name: "九州大学",
     officialUrl: "https://www.kyushu-u.ac.jp/",
+    admissionYear: 2027,
+    admissionType: '私費外国人留学生入試（4月入學）',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.kyushu-u.ac.jp/ja/admission/faculty/selection',
+    admissionPdfUrl: 'https://www.kyushu-u.ac.jp/f/67442/R9_shihi2-1.pdf',
+    admissionNote: '2027年度4月入學用募集要項PDF。10月入學英語課程另有不同制度及文件。',
     category: ["日本留學"],
     subcategory: ["大學"],
     fields: [{ name: "文學", worldRank: null, japanRank: null }, { name: "教育", worldRank: null, japanRank: null }, { name: "法律", worldRank: null, japanRank: null }, { name: "經濟", worldRank: null, japanRank: null }, { name: "商管", worldRank: null, japanRank: null }, { name: "理工", worldRank: null, japanRank: null }, { name: "資訊", worldRank: null, japanRank: null }, { name: "醫學", worldRank: null, japanRank: null }, { name: "農學", worldRank: null, japanRank: null }],
@@ -677,6 +730,12 @@ const RESOURCES = [
     id: "kobe-u",
     name: "神戸大学",
     officialUrl: "https://www.kobe-u.ac.jp/",
+    admissionYear: 2027,
+    admissionType: '學部別私費外国人特別選抜',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.fgh.kobe-u.ac.jp/ja/node/79',
+    admissionPdfUrl: "https://www.econ.kobe-u.ac.jp/wp-content/uploads/2026/08/R9-shihiryugakusei-Application-Guide.pdf",
+    admissionNote: "此PDF為經濟學部2027年度私費外国人留学生特別選抜募集要項；神戶大學依學部分開公告，無全校共用版，其他學部請至各學部頁確認。",
     category: ["日本留學"],
     subcategory: ["大學"],
     fields: [{ name: "文學", worldRank: null, japanRank: null }, { name: "法律", worldRank: null, japanRank: null }, { name: "經濟", worldRank: null, japanRank: null }, { name: "商管", worldRank: null, japanRank: null }, { name: "理工", worldRank: null, japanRank: null }, { name: "資訊", worldRank: null, japanRank: null }, { name: "農學", worldRank: null, japanRank: null }, { name: "醫學", worldRank: null, japanRank: null }, { name: "國際", worldRank: null, japanRank: null }],
@@ -712,6 +771,12 @@ const RESOURCES = [
     id: "waseda",
     name: "早稻田大学",
     officialUrl: "https://www.waseda.jp/",
+    admissionYear: 2027,
+    admissionType: '外国学生のための学部入学試験',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.waseda.jp/inst/admission/undergraduate/system/international/',
+    admissionPdfUrl: 'https://www.waseda.jp/inst/admission/assets/uploads/2026/02/01_2027_gaikokugakusei_nyushiyoukou.pdf',
+    admissionNote: '2027年度4月入學用；適用學部依官方要項所列，英語學位課程另有獨立申請制度。',
     category: ["日本留學"],
     subcategory: ["大學"],
     fields: [{ name: "政治", worldRank: null, japanRank: null }, { name: "經濟", worldRank: null, japanRank: null }, { name: "商管", worldRank: null, japanRank: null }, { name: "法律", worldRank: null, japanRank: null }, { name: "文學", worldRank: null, japanRank: null }, { name: "國際", worldRank: null, japanRank: null }, { name: "社會科學", worldRank: null, japanRank: null }, { name: "理工", worldRank: null, japanRank: null }, { name: "資訊", worldRank: null, japanRank: null }],
@@ -749,6 +814,12 @@ const RESOURCES = [
     id: "keio",
     name: "慶應義塾大学",
     officialUrl: "https://www.keio.ac.jp/",
+    admissionYear: 2027,
+    admissionType: '外国人留学生対象入学試験',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.keio.ac.jp/ja/admissions/faculty/examinations/international-student/',
+    admissionPdfUrl: 'https://www.keio.ac.jp/fixed-files/ryugaku_youkou.pdf',
+    admissionNote: 'PDF為文、經濟、法、商、理工學部2027年度要項；醫學部另有獨立PDF，需依志願學部選用。',
     category: ["日本留學"],
     subcategory: ["大學"],
     fields: [{ name: "經濟", worldRank: null, japanRank: null }, { name: "商管", worldRank: null, japanRank: null }, { name: "法律", worldRank: null, japanRank: null }, { name: "文學", worldRank: null, japanRank: null }, { name: "理工", worldRank: null, japanRank: null }, { name: "資訊", worldRank: null, japanRank: null }, { name: "醫學", worldRank: null, japanRank: null }, { name: "政策", worldRank: null, japanRank: null }],
@@ -787,6 +858,12 @@ const RESOURCES = [
     "id": "tsukuba",
     "name": "筑波大學",
     "officialUrl": "https://www.tsukuba.ac.jp/en/",
+    admissionYear: 2027,
+    admissionType: '外国学校経験者特別入試等（學群・學類別確認）',
+    admissionStatus: 'published',
+    admissionUrl: 'https://ac.tsukuba-u.ac.jp/apply/application-guidelines/',
+    admissionPdfUrl: "https://ac.tsukuba.ac.jp/wp/wp-content/uploads/2026/06/R9_gaikoku_jan_sec.pdf",
+    admissionNote: "筑波無名為「私費外国人留学生選抜」的獨立入試；此為最接近的「外国学校経験者特別入試（1月募集）」要項，第1種限教育、心理、障害科學、生物、情報科學、情報媒體創成等學類，須EJU與英語成績。申請前請確認自己是否符合資格。",
     "category": [
         "日本留學"
     ],
@@ -942,6 +1019,12 @@ const RESOURCES = [
     "id": "tus",
     "name": "東京理科大學",
     "officialUrl": "https://www.tus.ac.jp/en/",
+    admissionYear: 2027,
+    admissionType: '外国人留学生入学試験',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.tus.ac.jp/admissions/university/guideline/general/index.html',
+    admissionPdfUrl: 'https://www.tus.ac.jp/admissions/uploads/2026/2027_foreign_student_v2.pdf',
+    admissionNote: '已核實2027年度官方PDF直連。請依志願學部及入試制度確認適用範圍。',
     "category": [
         "日本留學"
     ],
@@ -1032,6 +1115,12 @@ const RESOURCES = [
     "id": "sophia",
     "name": "上智大學",
     "officialUrl": "https://www.sophia.ac.jp/eng/",
+    admissionYear: 2027,
+    admissionType: '外国人入学試験',
+    admissionStatus: 'published',
+    admissionUrl: 'https://adm.sophia.ac.jp/jpn/gakubu_tokubetsu_ad/gaikokujin/',
+    admissionPdfUrl: "https://adm.sophia.ac.jp/assets/uploads/sites/2/2026/05/2027gaikokujin_application_proc_rev.pdf",
+    admissionNote: "2027年度外国人入学試驗要項（神、文、總合人間科學、法、經濟、外國語、總合全球、理工等學部）；檔名含rev，可能有修訂，請以官網最新版為準。國際教養學部等另有入試。",
     "category": [
         "日本留學"
     ],
@@ -1119,6 +1208,12 @@ const RESOURCES = [
     "id": "tufs",
     "name": "東京外國語大學",
     "officialUrl": "https://www.tufs.ac.jp/english/",
+    admissionYear: 2027,
+    admissionType: '私費外国人留学生選抜',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.tufs.ac.jp/admission/exam/guideline/intl-students-1.html',
+    admissionPdfUrl: 'https://www.tufs.ac.jp/documents/admission/exam/01_2027_shihiryu_yoko.pdf',
+    admissionNote: '已核實2027年度官方PDF直連。請依志願學部及入試制度確認適用範圍。',
     "category": [
         "日本留學"
     ],
@@ -1190,6 +1285,12 @@ const RESOURCES = [
     "id": "chiba",
     "name": "千葉大學",
     "officialUrl": "https://www.chiba-u.jp/e/",
+    admissionYear: 2027,
+    admissionType: '私費外国人留学生選抜（學部別）',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.le.chiba-u.jp/exam/information.html',
+    admissionPdfUrl: "https://www.le.chiba-u.jp/static/pdf/01_2027shihiboshuyoko.pdf",
+    admissionNote: "此PDF為法政經學部2027年度私費外国人留学生選拔募集要項；千葉大學其他學部需另查各學部公告。",
     "category": [
         "日本留學"
     ],
@@ -1288,6 +1389,12 @@ const RESOURCES = [
     "id": "hiroshima",
     "name": "廣島大學",
     "officialUrl": "https://www.hiroshima-u.ac.jp/en/",
+    admissionYear: 2027,
+    admissionType: '學部外國人留學生選拔（制度待確認）',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.hiroshima-u.ac.jp/',
+    admissionPdfUrl: "https://www.hiroshima-u.ac.jp/index.php/system/files/297556/00_R9_gairyu23_youkou.pdf",
+    admissionNote: "令和9年度「光り輝き入試」總合型選抜（外国人留学生型）要項，涵蓋12個學部，須EJU與英語成績；廣島大學無名為「私費外国人留学生」的獨立選拔，此為最接近者，須先經資格審查。",
     "category": [
         "日本留學"
     ],
@@ -1422,6 +1529,12 @@ const RESOURCES = [
     "id": "kanazawa",
     "name": "金澤大學",
     "officialUrl": "https://www.kanazawa-u.ac.jp/en/",
+    admissionYear: 2027,
+    admissionType: '私費外国人留学生入試',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.kanazawa-u.ac.jp/admission/boshuyoko',
+    admissionPdfUrl: "https://www.kanazawa-u.ac.jp/wp/wp-content/uploads/2026/09/R9tokubetsu_boshuyoko_shihi.pdf",
+    admissionNote: "令和9年度（學士課程）私費外国人留学生入試要項，涵蓋融合、人間社會、理工、醫藥保健學域；出願期間2026/11/2–11/9，請務必先回官方頁確認。",
     "category": [
         "日本留學"
     ],
@@ -1496,6 +1609,12 @@ const RESOURCES = [
     "id": "okayama",
     "name": "岡山大學",
     "officialUrl": "https://www.okayama-u.ac.jp/eng/",
+    admissionYear: 2027,
+    admissionType: '私費外国人留学生選抜',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.okayama-u.ac.jp/tp/admission/kikokushihibosyuyoko.html',
+    admissionPdfUrl: 'https://www.okayama-u.ac.jp/user/st/nyushika/2027/pdf/bosyuyoko/shihi2027.pdf',
+    admissionNote: '已核實2027年度官方PDF直連。請依志願學部及入試制度確認適用範圍。',
     "category": [
         "日本留學"
     ],
@@ -1592,6 +1711,11 @@ const RESOURCES = [
     "id": "kumamoto",
     "name": "熊本大學",
     "officialUrl": "https://www.kumamoto-u.ac.jp/eng/",
+    admissionYear: 2027,
+    admissionType: '私費外国人留学生選抜（待核實）',
+    admissionStatus: 'unverified',
+    admissionUrl: 'https://www.kumamoto-u.ac.jp/eng',
+    admissionNote: "2027年度総合型選抜Ⅰ（私費外国人留学生入試）學生募集要項預定2026年11月下旬公布，目前尚無PDF；請至官方募集要項頁追蹤。",
     "category": [
         "日本留學"
     ],
@@ -1665,6 +1789,12 @@ const RESOURCES = [
     "id": "tuat",
     "name": "東京農工大學",
     "officialUrl": "https://www.tuat.ac.jp/en/",
+    admissionYear: 2027,
+    admissionType: '私費外国人留学生入試',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.tuat.ac.jp/admission/nyushi_gakubu/youkou/',
+    admissionPdfUrl: 'https://www.tuat.ac.jp/documents/tuat/admission/nyushi_gakubu/youkou/R9_tokubetu_youkou.pdf',
+    admissionNote: '已核實2027年度官方PDF直連。請依志願學部及入試制度確認適用範圍。',
     "category": [
         "日本留學"
     ],
@@ -1749,6 +1879,12 @@ const RESOURCES = [
     "id": "ritsumeikan",
     "name": "立命館大學",
     "officialUrl": "https://en.ritsumei.ac.jp/",
+    admissionYear: 2027,
+    admissionType: '外国人留学生入学試験（前期・後期）',
+    admissionStatus: 'published',
+    admissionUrl: 'https://admission.ritsumei.ac.jp/admission/international/guide.html',
+    admissionPdfUrl: "https://admission.ritsumei.ac.jp/assets/file/2027/admission/international/ryugakusei-youkou.pdf",
+    admissionNote: "2027年度外国人留学生入學試驗要項（第1期、第2期），須EJU，部分學部須英語成績。",
     "category": [
         "日本留學"
     ],
@@ -1888,6 +2024,12 @@ const RESOURCES = [
     "id": "doshisha",
     "name": "同志社大學",
     "officialUrl": "https://www.doshisha.ac.jp/english/",
+    admissionYear: 2027,
+    admissionType: '学部外国人留学生入学試験（Ⅰ期・Ⅱ期）',
+    admissionStatus: 'published',
+    admissionUrl: 'https://intad.doshisha.ac.jp/intad/japanese_program/guide_entrance_exam.html',
+    admissionPdfUrl: "https://intad.doshisha.ac.jp/files/ois/page/2027_youkou.pdf",
+    admissionNote: "2027年度外国人留学生入試要項（第I、II期），連結取自官方頁，PDF本體未另行開啟核對。",
     "category": [
         "日本留學"
     ],
@@ -1979,6 +2121,12 @@ const RESOURCES = [
     "id": "tokyo-gakugei",
     "name": "東京學藝大學",
     "officialUrl": "https://www.u-gakugei.ac.jp/english/",
+    admissionYear: 2027,
+    admissionType: '帰国生選抜・私費外国人留学生選抜',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.u-gakugei.ac.jp/nyushi/gakubu/post-35.html',
+    admissionPdfUrl: 'https://www.u-gakugei.ac.jp/nyushi/upload/2027_tgu_kikokushihi_appguide.pdf',
+    admissionNote: '已核實2027年度官方PDF直連。請依志願學部及入試制度確認適用範圍。',
     "category": [
         "日本留學"
     ],
@@ -2068,6 +2216,11 @@ const RESOURCES = [
     "id": "uec-tokyo",
     "name": "電氣通信大學",
     "officialUrl": "https://www.uec.ac.jp/eng/",
+    admissionYear: 2027,
+    admissionType: '學部外國人留學生選拔（待核實）',
+    admissionStatus: 'unverified',
+    admissionUrl: 'https://www.uec.ac.jp/eng/',
+    admissionNote: "2027年度私費外国人留学生選拔募集要項預定2026年11月上旬公開，出願需取得紙本冊子；目前尚無專用PDF，請至官方頁追蹤。",
     "category": [
         "日本留學"
     ],
@@ -2148,6 +2301,12 @@ const RESOURCES = [
     "id": "ynu",
     "name": "橫濱國立大學",
     "officialUrl": "https://www.ynu.ac.jp/english/",
+    admissionYear: 2027,
+    admissionType: '私費外国人留学生選抜（待核實）',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.ynu.ac.jp/english/',
+    admissionPdfUrl: "https://www.ynu.ac.jp/exam/faculty/essential/pdf/senbatsu2027.pdf",
+    admissionNote: "此為令和9年度入学者選抜要項（全學部），第V章為私費外国人留学生（YGEP-N1）；非單獨的留學生募集要項。理工學部渡日前入試另有 https://www.ynu.ac.jp/exam/faculty/essential/pdf/2027_rikou_n1mae.pdf。",
     "category": [
         "日本留學"
     ],
@@ -2226,6 +2385,11 @@ const RESOURCES = [
     "id": "saitama",
     "name": "埼玉大學",
     "officialUrl": "https://en.saitama-u.ac.jp/",
+    admissionYear: 2027,
+    admissionType: '私費外国人留学生選抜',
+    admissionStatus: 'pending',
+    admissionUrl: 'https://www.saitama-u.ac.jp/entrance/requirements/',
+    admissionNote: "私費外国人留学生選拔要項將併入「令和9年度學生募集要項（一般・帰国生徒・私費外国人留学生選拔）」，預定2026年11月公表；目前尚無PDF，請至官方頁追蹤。",
     "category": [
         "日本留學"
     ],
@@ -2303,6 +2467,11 @@ const RESOURCES = [
     "id": "shinshu",
     "name": "信州大學",
     "officialUrl": "https://www.shinshu-u.ac.jp/english/",
+    admissionYear: 2027,
+    admissionType: '私費外国人留学生選抜（學部別）',
+    admissionStatus: 'faculty_specific',
+    admissionUrl: 'https://www.shinshu-u.ac.jp/faculty/science/admission/current/admission-international.html',
+    admissionNote: "令和9年度私費外国人留学生選拔的專用募集要項尚未確認公開；全校入學者選抜要項（含私費外国人留学生選拔章節）可至官方入試頁查看，請以官方公告為準。",
     "category": [
         "日本留學"
     ],
@@ -2388,6 +2557,12 @@ const RESOURCES = [
     "id": "mie",
     "name": "三重大學",
     "officialUrl": "https://www.mie-u.ac.jp/en/",
+    admissionYear: 2027,
+    admissionType: '學部私費外国人留学生選抜（待核實）',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.mie-u.ac.jp/en/',
+    admissionPdfUrl: "https://www.mie-u.ac.jp/exam/2027_zinbun_itinenzitokubetusenbatu.pdf",
+    admissionNote: "此PDF僅為人文學部2027年度特別選抜（含私費外国人留学生枠）；生物資源學部另有 https://www.mie-u.ac.jp/exam/R9tokubetusennbatu_seibutsu.pdf。教育、工、醫學部的要項尚未找到。",
     "category": [
         "日本留學"
     ],
@@ -2462,6 +2637,12 @@ const RESOURCES = [
     "id": "shiga",
     "name": "滋賀大學",
     "officialUrl": "https://www.shiga-u.ac.jp/english/",
+    admissionYear: 2027,
+    admissionType: '私費外国人留学生選抜（經濟學部）',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.shiga-u.ac.jp/admission/examination_info/exam_eco/exam_eco_recommen_international/',
+    admissionPdfUrl: "https://www.shiga-u.ac.jp/wp/wp-content/uploads/R9shihiryu.pdf",
+    admissionNote: "此PDF僅適用經濟學部（令和9年度私費外国人留学生選拔，總合經濟學科10名）；資料科學部是否另有要項尚未確認。",
     "category": [
         "日本留學"
     ],
@@ -2526,6 +2707,12 @@ const RESOURCES = [
     "id": "nagasaki",
     "name": "長崎大學",
     "officialUrl": "https://www.nagasaki-u.ac.jp/en/",
+    admissionYear: 2027,
+    admissionType: '外国人留学生選抜（多文化社會學部）',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.hss.nagasaki-u.ac.jp/exam/international.html',
+    admissionPdfUrl: "https://www.nagasaki-u.ac.jp/nyugaku/admission/selection/file/R09/2027_Gaikoku-Youkou.pdf",
+    admissionNote: "令和9（2027）年度外国人留学生選抜學生募集要項（2026年9月版）；出願資格為海外完成12年教育者。多文化社會學部已於10月出願完畢，其他學部出願為2026/11/16–11/20，請盡快確認。",
     "category": [
         "日本留學"
     ],
@@ -2617,6 +2804,12 @@ const RESOURCES = [
     "id": "kagoshima",
     "name": "鹿兒島大學",
     "officialUrl": "https://www.kagoshima-u.ac.jp/english/",
+    admissionYear: 2027,
+    admissionType: '私費外国人学部留学生選抜',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.kagoshima-u.ac.jp/exam/post-200.html',
+    admissionPdfUrl: "https://www.kagoshima-u.ac.jp/exam/R09-senbatu-1.pdf",
+    admissionNote: "令和9年度入学者選抜要項（2026年7月發行），自p.101起為「私費外国人学部留学生選抜」；為全選抜合併要項，非單獨募集要項。",
     "category": [
         "日本留學"
     ],
@@ -2697,6 +2890,12 @@ const RESOURCES = [
     "id": "kwansei-gakuin",
     "name": "關西學院大學",
     "officialUrl": "https://www.kwansei.ac.jp/en/",
+    admissionYear: 2027,
+    admissionType: '外国人留学生入学試験',
+    admissionStatus: 'published',
+    admissionUrl: 'https://ciec.kwansei.ac.jp/page/examination-department.html',
+    admissionPdfUrl: "https://www.kwansei.ac.jp/assets/international-admission-guide2027.pdf",
+    admissionNote: "2027年度外国人留学生入學試驗要項；Phase II 申請期間為2026/11/16–24，請以官方頁最新資訊為準。",
     "category": [
         "日本留學"
     ],
@@ -2790,6 +2989,12 @@ const RESOURCES = [
     "id": "aoyama-gakuin",
     "name": "青山學院大學",
     "officialUrl": "https://www.aoyama.ac.jp/en/",
+    admissionYear: 2027,
+    admissionType: '外国人留学生入試',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.aoyama.ac.jp/admission/undergraduate/examination/exam_foreign_student.html',
+    admissionPdfUrl: "https://www.aoyama.ac.jp/wp-content/uploads/2026/07/ad_2027_internationalstudent_20260709_e1Nf5.pdf",
+    admissionNote: "2027年度外国人留学生入学者選抜要項，涵蓋文（法國文學、日本文學、史學、比較藝術）、教育人間科學、經濟、法、經營、國際政治經濟、綜合文化政策、理工、社會情報各學部；英美文學科另有單獨版本。",
     "category": [
         "日本留學"
     ],
@@ -2888,6 +3093,12 @@ const RESOURCES = [
     "id": "meiji",
     "name": "明治大學",
     "officialUrl": "https://www.meiji.ac.jp/cip/english/",
+    admissionYear: 2027,
+    admissionType: '外国人留学生入学試験',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.meiji.ac.jp/cip/prospective/admission_exams/ug_application.html',
+    admissionPdfUrl: 'https://www.meiji.ac.jp/cip/prospective/admission_exams/6t5h7p00000ivf38-att/yoko.pdf',
+    admissionNote: '已核實2027年度官方PDF直連。請依志願學部及入試制度確認適用範圍。',
     "category": [
         "日本留學"
     ],
@@ -3034,6 +3245,445 @@ const RESOURCES = [
         weaknesses: [],
         tags: ["日本留學官方網站", "STUDY in JAPAN", "JASSO", "獎學金", "留學", "升學", "生活資訊", "經驗分享", "官方"]
     },
+  {
+    "id": "path-eju",
+    "name": "EJU 日本留學試驗＋各校私費外國人留學生入試",
+    "shortName": "EJU 入試",
+    "officialUrl": "https://www.jasso.go.jp/en/ryugaku/eju/index.html",
+    "category": [
+      "官方資源及升學管道"
+    ],
+    "subcategory": [
+      "入學方式"
+    ],
+    "price": "付費",
+    "priceDetail": "台灣考區報名費：1 科 NT$1,500、2～3 科 NT$2,000（2026 年資料）；另有各校檢定費、入學金與學費。",
+    "extraLinks": [
+      {
+        "label": "台灣 EJU 報名（LTTC）",
+        "url": "https://eju.tw/registration1.html"
+      },
+      {
+        "label": "搜尋採用 EJU 的學校",
+        "url": "https://www.studyinjapan.go.jp/en/search-for-schools/school_search.php"
+      },
+      {
+        "label": "日本留學官方：考試說明",
+        "url": "https://www.studyinjapan.go.jp/tc/planning/examination/"
+      }
+    ],
+    "registrationMethod": "線上報名（LTTC 台灣 EJU 網站）；在台灣報名者只能在台灣（台北）應考",
+    "registrationPeriod": "每年 2 次：6 月、11 月考試；報名約 2～3 月、7 月",
+    "target": [
+      "想讀日文授課學部的人",
+      "可準備日語與數學、理科或綜合科目的人"
+    ],
+    "strengths": [
+      "約 60% 以上大學（約 500 所）採用，國立大學幾乎全數採用",
+      "無年齡與考試次數限制，成績兩年內有效",
+      "可在台灣（台北）應考，不必先赴日",
+      "成績優異者有 JASSO 獎學金預約制度",
+      "部分學校可搭配「渡日前入學許可」，在台灣就完成選拔"
+    ],
+    "weaknesses": [
+      "需準備日語，加上數學、理科或綜合科目，各校指定科目不同",
+      "多數學校在 EJU 之外還有書審、面試或校內考試",
+      "沒有全國統一制度，必須逐校查募集要項",
+      "部分學校只接受特定場次的成績",
+      "報名費與時程每年可能調整，需以官方公告為準"
+    ],
+    "tags": [
+      "EJU",
+      "日本留學試驗",
+      "私費外國人留學生入試",
+      "入學方式",
+      "日文授課",
+      "國立大學",
+      "JASSO"
+    ],
+    "admissionNote": "報名費與時程為 2026 年資料，每年可能調整，請以 JASSO 與 LTTC 最新公告為準。"
+  },
+  {
+    "id": "path-prearrival",
+    "name": "渡日前入學許可（事前入試）",
+    "shortName": "渡日前入學許可",
+    "officialUrl": "https://www.jasso.go.jp/en/ryugaku/eju/about/prearrival_admission.html",
+    "category": [
+      "官方資源及升學管道"
+    ],
+    "subcategory": [
+      "入學方式"
+    ],
+    "price": "付費",
+    "priceDetail": "依各校規定；若以 EJU 成績申請，另有 EJU 報名費。",
+    "extraLinks": [
+      {
+        "label": "日本留學官方：入學途徑",
+        "url": "https://www.studyinjapan.go.jp/tc/planning/examination/"
+      },
+      {
+        "label": "搜尋學校",
+        "url": "https://www.studyinjapan.go.jp/en/search-for-schools/school_search.php"
+      }
+    ],
+    "registrationMethod": "依各校募集要項（EJU 成績、書面審查或海外面試）",
+    "registrationPeriod": "依各校公告",
+    "target": [
+      "想在台灣完成選拔、不想為考試先赴日的人",
+      "日語或英語程度已達標的人"
+    ],
+    "strengths": [
+      "不必來日應考，時間與經濟負擔比來日應考小",
+      "來日到畢業的時間比先讀日語學校短，費用也較低",
+      "來日後可直接從專業課程開始學習",
+      "部分學校只要求英語"
+    ],
+    "weaknesses": [
+      "赴日前通常需要較高的日語能力（部分學校只要求英語）",
+      "實施的學校很少，選校範圍有限",
+      "對學校的了解僅限於赴日前取得的資訊，入學後可能與期待有落差"
+    ],
+    "tags": [
+      "渡日前入學許可",
+      "事前入試",
+      "入學方式",
+      "海外入試",
+      "書面審查",
+      "EJU"
+    ]
+  },
+  {
+    "id": "path-english",
+    "name": "英語授課學位課程（SGU 等）",
+    "shortName": "英語學位課程",
+    "officialUrl": "https://www.studyinjapan.go.jp/tc/planning/by-style/english-program/",
+    "category": [
+      "官方資源及升學管道"
+    ],
+    "subcategory": [
+      "入學方式"
+    ],
+    "price": "付費",
+    "priceDetail": "學費依學校而定；日本大學一年平均學費：國立約 53.6 萬日圓、公立約 53.6 萬日圓、私立約 114 萬日圓（2023 年度資料，不含生活費）。",
+    "extraLinks": [
+      {
+        "label": "搜尋學校與課程",
+        "url": "https://www.studyinjapan.go.jp/en/search-for-schools/school_search.php"
+      }
+    ],
+    "registrationMethod": "依各校線上申請系統",
+    "registrationPeriod": "依各校公告，多數為 4 月入學，部分課程為 9 月或 10 月入學",
+    "target": [
+      "日語尚未達標、想先以英語取得學位的人",
+      "手上有 TOEFL／IELTS、SAT、IB 等成績的人"
+    ],
+    "strengths": [
+      "不一定需要 EJU 與日語能力證明（依學校與課程而定）",
+      "通常提交英語成績、SAT／ACT／IB 成績與書面資料，再加線上面試",
+      "對日語尚不熟的學生門檻較低",
+      "部分課程接受台灣學測成績（依課程而定）"
+    ],
+    "weaknesses": [
+      "學測成績不是萬用憑證，通常還需要英語檢定、書審與面試",
+      "部分課程有明確的英語門檻，例如東北大學 FGL：TOEFL iBT 79／IELTS 6.0；大阪大學 HSIUDP：TOEFL iBT 85／IELTS 6.5",
+      "若要在日本長期生活或就業，仍建議學日語",
+      "課程數量不如日文授課多，入學時間可能與台灣學年不同"
+    ],
+    "tags": [
+      "英語授課",
+      "英語學位課程",
+      "SGU",
+      "TOEFL",
+      "IELTS",
+      "SAT",
+      "IB",
+      "學測",
+      "入學方式"
+    ],
+    "admissionNote": "英語門檻與接受的成績每年可能調整，上述門檻為 2026 年資料，申請前請查最新募集要項。"
+  },
+  {
+    "id": "path-school-exam",
+    "name": "各校自辦入試（不考 EJU）",
+    "shortName": "自辦入試",
+    "officialUrl": "https://www.studyinjapan.go.jp/en/search-for-schools/school_search.php",
+    "category": [
+      "官方資源及升學管道"
+    ],
+    "subcategory": [
+      "入學方式"
+    ],
+    "price": "付費",
+    "priceDetail": "依各校規定，通常含檢定費。",
+    "registrationMethod": "依各校募集要項",
+    "registrationPeriod": "依各校公告",
+    "target": [
+      "日語程度已達 JLPT N2 以上的人",
+      "不想準備 EJU 數學與理科的人"
+    ],
+    "strengths": [
+      "部分私立大學與學部不要求 EJU",
+      "通常提交 JLPT N2 以上或 EJU 日語成績，再加上書面資料",
+      "部分學校接受海外申請與線上面試",
+      "入學要求較有彈性"
+    ],
+    "weaknesses": [
+      "書審通過後才進入校內考試（筆試、面談或兩者），準備方式與 EJU 完全不同",
+      "部分學校需要親赴日本應考",
+      "沒有統一制度，需逐校查要項",
+      "競爭仍可能很激烈"
+    ],
+    "tags": [
+      "自辦入試",
+      "校內考試",
+      "JLPT N2",
+      "書審",
+      "面試",
+      "入學方式"
+    ],
+    "admissionNote": "本項整理自留學資訊網站，非官方統一制度；各校要求不同，請以募集要項為準。"
+  },
+  {
+    "id": "path-foreign-school",
+    "name": "外國學校畢業生特別選考／總合型選抜",
+    "shortName": "特別選考",
+    "officialUrl": "https://www.studyinjapan.go.jp/en/search-for-schools/school_search.php",
+    "category": [
+      "官方資源及升學管道"
+    ],
+    "subcategory": [
+      "入學方式"
+    ],
+    "price": "付費",
+    "priceDetail": "依各校規定，通常含檢定費。",
+    "extraLinks": [
+      {
+        "label": "東京大學：外国学校卒業学生特別選考",
+        "url": "https://www.u-tokyo.ac.jp/ja/admissions/undergraduate/e01_02_04.html"
+      },
+      {
+        "label": "筑波大學：募集要項",
+        "url": "https://ac.tsukuba-u.ac.jp/apply/application-guidelines/"
+      },
+      {
+        "label": "國際基督教大學（ICU）：學部入學",
+        "url": "https://www.icu.ac.jp/en/admissions/undergraduate/"
+      }
+    ],
+    "registrationMethod": "依各校募集要項",
+    "registrationPeriod": "依各校公告，多數於 10 月至隔年 1 月",
+    "target": [
+      "在海外學校就讀多年的人",
+      "手上有 IB 或海外學歷資格的人"
+    ],
+    "strengths": [
+      "部分學校另設針對外國學校畢業生的選考，不一定走一般私費外國人留學生選拔",
+      "評量通常多元，包含書審、面試與英語成績",
+      "部分選考可不限國籍"
+    ],
+    "weaknesses": [
+      "各校資格差異大，例如筑波第 1 種要求海外就學 8 年以上或 IB 等海外入學資格，並限定部分學類",
+      "名額多半很少",
+      "部分學校仍要求 EJU 與英語成績",
+      "要項各校不同，需逐校確認"
+    ],
+    "tags": [
+      "外國學校",
+      "特別選考",
+      "IB",
+      "總合型選抜",
+      "ICU",
+      "筑波",
+      "東京大學",
+      "入學方式"
+    ],
+    "admissionNote": "此類選考每年條件與日程都可能調整，且多數學校另有「一般私費外國人留學生選拔」，不要混淆。"
+  },
+  {
+    "id": "path-language-school",
+    "name": "先讀日本語學校，再升學",
+    "shortName": "日語學校升學",
+    "officialUrl": "https://www.nihongokyouiku.mext.go.jp/top",
+    "category": [
+      "官方資源及升學管道"
+    ],
+    "subcategory": [
+      "入學方式"
+    ],
+    "price": "付費",
+    "priceDetail": "學費與生活費較高；各學校費用不同。",
+    "extraLinks": [
+      {
+        "label": "日本語教育振興協會",
+        "url": "https://www.nisshinkyo.org/search/index_c2.html"
+      },
+      {
+        "label": "全國日本語學校聯合會（JaLSA）",
+        "url": "https://jalsa.tokyo"
+      }
+    ],
+    "registrationMethod": "依各日本語學校",
+    "registrationPeriod": "依各校入學期（常見 4 月、7 月、10 月、1 月）",
+    "target": [
+      "日語基礎尚淺、想先在日本學習並適應生活的人",
+      "學歷未滿 12 年、需要預備課程的人"
+    ],
+    "strengths": [
+      "不需要在台灣花很長時間學日語",
+      "約 6 個月至 2 年可打好日語基礎",
+      "學習期間可同時適應日本生活",
+      "在日本蒐集入學考試資訊較方便"
+    ],
+    "weaknesses": [
+      "從來日到畢業的時間較長，學費與生活費較高",
+      "日語學校最長只能就讀 2 年，期間未考上須回國"
+    ],
+    "tags": [
+      "日語學校",
+      "日本語學校",
+      "預備課程",
+      "入學方式",
+      "升學"
+    ],
+    "admissionNote": "日語學校需為官方認定的機構，申請前請在文部科學省或法務省公告名單中確認。"
+  },
+  {
+    "id": "path-koryu-scholarship",
+    "name": "交流協會日本獎學金（學部留學生）",
+    "shortName": "交流協會學部獎學金",
+    "officialUrl": "https://www.koryu.or.jp/tw/",
+    "category": [
+      "官方資源及升學管道"
+    ],
+    "subcategory": [
+      "入學方式"
+    ],
+    "price": "免費",
+    "priceDetail": "提供每月生活費（2024 年度為 117,000 日圓）、學費與入學金補助、來回機票；以 2025 年度簡章為例，實際金額以最新簡章為準。",
+    "extraLinks": [
+      {
+        "label": "日本政府獎學金（文部科學省）說明",
+        "url": "https://www.studyinjapan.go.jp/tc/planning/scholarships/mext-scholarships/"
+      }
+    ],
+    "registrationMethod": "寄送報名表至交流協會台北事務所（郵戳為憑）",
+    "registrationPeriod": "以 2025 年度為例：前一年 7 月報名 EJU 第 2 回、11 月在台北應考並寄出申請書、隔年 5 月面試",
+    "target": [
+      "台灣籍、希望就讀日本國立大學的高中畢業生",
+      "願意以日語學習的人"
+    ],
+    "strengths": [
+      "獎學金包含學費、月額生活費與來回機票",
+      "期間含最初 6 個月預備教育（以 2025 年度為例，共 4 年 6 個月）",
+      "以 EJU 成績初試，不需另外準備複雜的申請文件"
+    ],
+    "weaknesses": [
+      "只限就讀國立大學，私立大學、語言學校與短大不在範圍內",
+      "志願校由協會依成績、面試與名額分配，不一定是第一志願",
+      "須在台灣應考 EJU，且面試以日語進行",
+      "預備教育未完成的人須返回台灣，且不可同時領其他獎學金",
+      "名額與資格每年調整，須注意年齡與出生日期限制"
+    ],
+    "tags": [
+      "交流協會",
+      "獎學金",
+      "學部留學生",
+      "文部科學省",
+      "EJU",
+      "國立大學",
+      "入學方式",
+      "日本政府獎學金"
+    ],
+    "admissionNote": "此項內容依 2025 年度（2024 年公告）簡章整理，資格、時程與金額每年可能調整，請務必以交流協會最新簡章為準。"
+  },
+  {
+    "id": "path-jpue",
+    "name": "JPUE 日本大學聯合學力考試",
+    "shortName": "JPUE",
+    "officialUrl": "https://jpue.cn/Hant/",
+    "category": [
+      "官方資源及升學管道"
+    ],
+    "subcategory": [
+      "入學方式"
+    ],
+    "price": "付費",
+    "priceDetail": "考試與報名費用以官網及各地區公告為準；另有部分學校要求的留學前準備教育，費用依各校或合作機構而定。",
+    "registrationMethod": "官網選擇地區後線上出願",
+    "registrationPeriod": "依官網「JPUE 時間表」，各地區日程不同",
+    "target": [
+      "不想準備 EJU 日語與日本高中課程內容的人",
+      "想以中文或英文應考、日語尚未很強的人"
+    ],
+    "strengths": [
+      "不要求日語能力，可用英語、中文等語言應考",
+      "考試範圍依當地高中課程大綱，已在台灣就讀高中的人準備方向較直接",
+      "流程為參加考試、取得一次錄取，再依大學要求完成留學前準備教育後正式申請",
+      "部分採用學校提供入學金或學費減免（依學校而異）"
+    ],
+    "weaknesses": [
+      "只限採用 JPUE 的學校，成績不能與 EJU 互通，也不是所有日本大學都承認",
+      "不是日本政府或 JASSO 公布的入學考試，在日本留學官方網站上我沒有找到相關說明",
+      "官網未明列主辦機構與採用大學總數，需自行用官網的「尋找大學」查詢",
+      "考試日程可能變動，例如官網公告 2026 年 7 月第 4 期筆試需重新實施、2027 年 4 月第 4 期入學考試已延期",
+      "資格需在 2027 年 3 月 31 日前預計完成 12 年教育且滿 18 歲，並須取得不妨礙入學的在留資格"
+    ],
+    "tags": [
+      "JPUE",
+      "日本大學聯合學力考試",
+      "聯合考試",
+      "入學方式",
+      "英語應考",
+      "免日語"
+    ],
+    "admissionNote": "JPUE 為民間機構舉辦的考試，不屬於 JASSO 的 EJU，採用學校名單與日程請以 jpue.cn 官網為準，並同時向志願學校確認是否承認。"
+  },
+  {
+    "id": "path-japan-hs",
+    "name": "就讀日本高中後升學（共通測驗／推薦／總合型）",
+    "shortName": "日本高中升學",
+    "officialUrl": "https://www.dnc.ac.jp/",
+    "category": [
+      "官方資源及升學管道"
+    ],
+    "subcategory": [
+      "入學方式"
+    ],
+    "price": "付費",
+    "priceDetail": "依就讀的高中與大學而定。",
+    "extraLinks": [
+      {
+        "label": "日本留學官方：入學考試說明",
+        "url": "https://www.studyinjapan.go.jp/tc/planning/examination/"
+      }
+    ],
+    "registrationMethod": "依各高中與各大學",
+    "registrationPeriod": "依各大學入試日程",
+    "target": [
+      "國中畢業就想赴日讀高中的人",
+      "想以日本學生同樣方式升學的人"
+    ],
+    "strengths": [
+      "升學選擇更多，國私立大學都可考慮，不一定需要 EJU",
+      "一般選抜：大學入學共通測驗加各校個別考試",
+      "推薦入試：以高中成績為主，指定校推薦錄取率相對較高",
+      "總合型選抜：重視個人特質與課外活動"
+    ],
+    "weaknesses": [
+      "需先赴日就讀高中，時間與費用負擔都較長",
+      "共通測驗以日本學生為主要對象，需要接近日本學生的準備",
+      "總合型選抜需志望理由書、面試與小論文，準備要求高"
+    ],
+    "tags": [
+      "日本高中",
+      "共通テスト",
+      "推薦入試",
+      "總合型選抜",
+      "AO",
+      "入學方式"
+    ],
+    "admissionNote": "此為與台灣高中畢業生赴日不同的升學路線，須在高中階段就開始規劃。"
+  }
 ];
 
 
@@ -3047,6 +3697,12 @@ const universities_37_46 = [
     id: "chuo",
     name: "中央大學",
     officialUrl: "https://www.chuo-u.ac.jp/english/",
+    admissionYear: 2027,
+    admissionType: '外国人留学生入学試験（4月入學）',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.chuo-u.ac.jp/connect/admission/special/guide/',
+    admissionPdfUrl: 'https://www.chuo-u.ac.jp/common_d/connect/admission/2027/special/12_1_6.pdf',
+    admissionNote: '2027年度特別入試頁列出的4月入學外国人留学生入試要項PDF；另有商學部B方式獨立實施要領。',
 
     category: ["日本留學"],
     subcategory: ["大學"],
@@ -3167,6 +3823,11 @@ const universities_37_46 = [
     id: "hosei",
     name: "法政大學",
     officialUrl: "https://www.hosei.ac.jp/english/",
+    admissionYear: 2027,
+    admissionType: '外国人留学生入学試験',
+    admissionStatus: 'published_page',
+    admissionUrl: 'https://nyushi.hosei.ac.jp/news/article/20260630_02/',
+    admissionNote: "法政大學外国人留学生入試的完整要項放在外部報名平台，hosei.ac.jp網域上只有2026年3月的概要PDF，因此未附PDF連結；請至官方外国人留学生入試頁確認。",
 
     category: ["日本留學"],
     subcategory: ["大學"],
@@ -3283,6 +3944,11 @@ const universities_37_46 = [
     id: "rikkyo",
     name: "立教大學",
     officialUrl: "https://english.rikkyo.ac.jp/",
+    admissionYear: 2027,
+    admissionType: '外国人留学生入試（學部別制度）',
+    admissionStatus: 'unverified',
+    admissionUrl: 'https://www.rikkyo.ac.jp/admissions/faq/admissions2.html',
+    admissionNote: "立教大學外国人留学生入試的要項放在外部報名平台，rikkyo.ac.jp上未找到2027年度要項PDF，因此未附PDF連結；請至官方頁確認。",
 
     category: ["日本留學"],
     subcategory: ["大學"],
@@ -3405,6 +4071,12 @@ const universities_37_46 = [
     id: "kansai",
     name: "關西大學",
     officialUrl: "https://www.kansai-u.ac.jp/English/",
+    admissionYear: 2027,
+    admissionType: '外国人学部留学生入試',
+    admissionStatus: 'unverified',
+    admissionUrl: 'https://nyusi01.nyusi.kansai-u.ac.jp/admission/foreigner/',
+    admissionPdfUrl: "https://files.microcms-assets.io/assets/76cac1d7ce9f4ad08d453f8f074f8419/dbe5556329784b19bb9c21128d18e460/2027_foreigner_yoko.pdf",
+    admissionNote: "此連結取自關西大學官方入試頁的「外国人学部留学生入試 入試要項 2027」，但檔案放在 microcms-assets.io 網域，本站尚未能實際開啟核對內容，使用前請務必自行確認。",
 
     category: ["日本留學"],
     subcategory: ["大學"],
@@ -3534,6 +4206,12 @@ const universities_37_46 = [
     id: "osaka-metropolitan",
     name: "大阪公立大學",
     officialUrl: "https://www.omu.ac.jp/en/",
+    admissionYear: 2027,
+    admissionType: '私費外国人留学生特別選抜',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.omu.ac.jp/admissions/ug/exam_info/special/foreigner/',
+    admissionPdfUrl: "https://www.omu.ac.jp/admissions/assets/13_international_student2027.pdf",
+    admissionNote: "2027年度學生募集要項（私費外国人留学生特別選抜），2026年7月發行；各學部選拔方式不同，請依志願學部確認。",
 
     category: ["日本留學"],
     subcategory: ["大學"],
@@ -3665,6 +4343,12 @@ const universities_37_46 = [
     id: "tokyo-metropolitan",
     name: "東京都立大學",
     officialUrl: "https://www.tmu.ac.jp/english/",
+    admissionYear: 2027,
+    admissionType: '私費外国人留学生入試',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.tmu.ac.jp/entrance/faculty/application_guideline.html',
+    admissionPdfUrl: 'https://www.tmu.ac.jp/assets/files/download/entrance/guide/2026/2027_tsg_bosyuuyoukou.pdf',
+    admissionNote: '2027年度學部私費外國人留學生募集要項；經濟經營學部另有獨立募集要項，生命科學科部分選拔亦有不同版本。',
 
     category: ["日本留學"],
     subcategory: ["大學"],
@@ -3792,6 +4476,12 @@ const universities_37_46 = [
     id: "yokohama-city",
     name: "橫濱市立大學",
     officialUrl: "https://www.yokohama-cu.ac.jp/english/",
+    admissionYear: 2027,
+    admissionType: '外国人留学生特別選抜',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.yokohama-cu.ac.jp/admissions/admissions/special_selection/international_students/',
+    admissionPdfUrl: 'https://www.yokohama-cu.ac.jp/admissions/admissions/special_selection/international_students/j8907d0000000mn8-att/2027_ryugaku_v2.pdf',
+    admissionNote: '2027年度學生募集要項PDF。官方要求另取得冊子體募集要項（願書），PDF可供查閱但請確認出願所需版本。',
 
     category: ["日本留學"],
     subcategory: ["大學"],
@@ -3898,6 +4588,12 @@ const universities_37_46 = [
     id: "kyoto-institute-technology",
     name: "京都工藝纖維大學",
     officialUrl: "https://www.kit.ac.jp/en/",
+    admissionYear: 2027,
+    admissionType: '私費外国人留学生入試',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.kit.ac.jp/test_index/school_news/undergraduate/type_abroad/',
+    admissionPdfUrl: 'https://ac.web.kit.ac.jp/02/nyushi/yoko/gakubu/2027_shihi_yoko.pdf',
+    admissionNote: '2027年度私費外国人留學生入試學生募集要項；官方公告另有2026年4月22日訂正資訊，下載時一併確認。',
 
     category: ["日本留學"],
     subcategory: ["大學"],
@@ -4062,6 +4758,12 @@ const universities_37_46 = [
     id: "icu",
     name: "國際基督教大學",
     officialUrl: "https://www.icu.ac.jp/en/",
+    admissionYear: 2027,
+    admissionType: '學部一般／留學生申請制度需確認',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.icu.ac.jp/en/admissions/undergraduate/',
+    admissionPdfUrl: "https://www.icu.ac.jp/admissions/undergraduate/images/AY2027_sogo.pdf",
+    admissionNote: "此為2027年度總合型選抜（4月入學）要項；ICU無獨立的「外国人留学生入試」，台灣高中畢業生較可能走此管道。另有帰国生要項 https://www.icu.ac.jp/admissions/undergraduate/images/2027ki.pdf（須海外就讀至少兩年）。",
 
     category: ["日本留學"],
     subcategory: ["大學"],
@@ -4190,6 +4892,12 @@ const universities_37_46 = [
     id: "tokyo-university-marine-science-technology",
     name: "東京海洋大學",
     officialUrl: "https://www.kaiyodai.ac.jp/en/",
+    admissionYear: 2027,
+    admissionType: '私費外国人留学生特別入試',
+    admissionStatus: 'published',
+    admissionUrl: 'https://www.kaiyodai.ac.jp/news/e_undergraduate/detail/82026_11.html',
+    admissionPdfUrl: 'https://www.kaiyodai.ac.jp/upload-file/86917ddbe495cc571a3ab327c8ec83c68f8183b4.pdf',
+    admissionNote: '2027年度私費外国人留學生特別入試學生募集要項；官方公告日期2026年10月19日。',
 
     category: ["日本留學"],
     subcategory: ["大學"],
