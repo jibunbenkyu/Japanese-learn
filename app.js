@@ -16,6 +16,9 @@ function normalizeUniversity(u){
   };
 }
 if (typeof universities_37_46 !== 'undefined') RESOURCES.push(...universities_37_46.map(normalizeUniversity));
+RESOURCES.forEach(r => { if (QS_OVERALL_2027[r.id] !== undefined) r.qsOverall = QS_OVERALL_2027[r.id] || { none: true }; });
+const fmtQs = q => !q || q.none ? '' : (q.tie ? '並列 ' : '') + q.world;
+const qsJp = q => !q || q.none ? '' : (/[–-]/.test(q.japan) ? q.japan : q.japan);
 
 /* ===== 瀏覽次數統計（GoatCounter，免 cookie） =====
    到 goatcounter.com 免費註冊，把網站代號填在下面（例如 "japanese-nav"）。
@@ -157,7 +160,7 @@ function renderResults(){
     ? `<p class="rc">符合 ${list.length} 筆${list.length > limit ? `，先列出前 ${limit} 筆` : ''}，點選卡片看詳細資訊</p>` + list.slice(0, limit).map(r => `
         <button type="button" class="res" data-id="${esc(r.id)}" data-cat="${esc(r.category[0])}">
           <span class="row"><span class="name">${esc(r.name)}</span><span class="pill ${priceClass(r.price)}">${esc(r.price)}</span></span>
-          <span class="meta"><span class="pill sub">${esc(r.subcategory.join('、'))}</span>${r.level && r.level.length ? `<span>${r.category[0] === '日本留學' ? '偏差值 ' : ''}${esc(formatLevel(r.level))}</span>` : ''}</span>
+          <span class="meta"><span class="pill sub">${esc(r.subcategory.join('、'))}</span>${r.level && r.level.length ? `<span>${r.category[0] === '日本留學' ? '偏差值 ' : ''}${esc(formatLevel(r.level))}</span>` : ''}${r.qsOverall && !r.qsOverall.none ? `<span>QS 日本第 ${esc(r.qsOverall.japan)} 名</span>` : ''}</span>
         </button>`).join('')
     : `<div class="empty-state">沒有符合的資源，換個關鍵字，或清除小類別再試一次。</div>`;
 }
@@ -175,6 +178,12 @@ function openDetail(id, trigger){
   const qs = [...(r.qsRankings || [])].sort((a,b) => rankNum(a.worldRank) - rankNum(b.worldRank));
   const hasJp = qs.some(x => x.japanRank);
   const note = r.admissionNote ? `<div class="amber"><span aria-hidden="true">⚠</span><span>${esc(r.admissionNote)}</span></div>` : '';
+  const qo = r.qsOverall;
+  const qsBlock = !isUni || !qo ? '' : `<div class="qs-overall"><div class="lab">QS 世界大學排名（2027）</div>${qo.none
+    ? `<p class="txt">QS 2027 榜單中未查到這所學校。</p>`
+    : `<div class="kv"><div><div class="big">日本第 ${esc(qo.japan)} 名</div><p class="txt">日本國內名次${/[–-]/.test(qo.japan) ? '（同級距，未細分）' : ''}</p></div><div><div class="big">${esc(fmtQs(qo))}</div><p class="txt">世界${/[-+]/.test(qo.world) ? '級距' : '名次'}</p></div></div>`}
+    ${(r.qsRankings || []).length ? '<p class="note-src">整校名次不代表各學部的實力，不同學部差異很大，請同時參考下方的學科排名。</p>' : '<p class="note-src">整校名次不代表各學部的實力，不同學部差異很大。</p>'}
+    <p class="note-src">資料來源：<a href="https://www.topuniversities.com/world-university-rankings" target="_blank" rel="noopener noreferrer">QS World University Rankings 2027</a>；本站取自第三方彙整頁 xuanxiao.org（2026-11-03），請以 QS 官網為準。</p></div>`;
   const reg = (r.registrationMethod || r.registrationPeriod)
     ? `<div class="kv">${r.registrationMethod ? `<div><div class="lab">報名方式</div><p class="txt">${esc(r.registrationMethod)}</p></div>` : ''}${r.registrationPeriod ? `<div><div class="lab">報名時間</div><p class="txt">${esc(r.registrationPeriod)}</p></div>` : ''}</div>` : '';
   detail.innerHTML = `
@@ -193,6 +202,7 @@ function openDetail(id, trigger){
           ${r.level && r.level.length ? `<div><div class="lab">${isUni ? '偏差值' : '程度'}</div><div class="big">${esc(formatLevel(r.level))}</div>${isUni ? `<p class="note-src">資料來源：河合塾 Kei-Net　2027年度　一般選拔</p>` : ''}</div>` : ''}
           <div><div class="lab">費用</div><p class="txt">${esc(r.priceDetail || r.price)}</p></div>
         </div>
+        ${qsBlock}
         ${note}
         ${reg}
         ${r.target ? `<div><div class="lab">適合對象</div>${Array.isArray(r.target) ? `<div class="tags-row">${r.target.map(x => `<span class="tag">${esc(x)}</span>`).join('')}</div>` : `<p class="txt">${esc(r.target)}</p>`}</div>` : ''}
@@ -200,7 +210,8 @@ function openDetail(id, trigger){
         ${qs.length ? `<div><div class="lab">QS 學科排名</div>
           <div class="qs" role="table"><span class="h">學科</span><span class="h r">世界</span><span class="h r">${hasJp ? '日本' : ''}</span>
             ${qs.map((x,i) => `<span>${esc(x.subject)}</span><span class="r ${i < 3 ? 'top3' : ''}">${esc(x.worldRank || '—')}</span><span class="r">${hasJp ? esc(x.japanRank || '—') : ''}</span>`).join('')}
-          </div></div>` : ''}
+          </div>
+          <p class="note-src">資料來源：QS World University Rankings by Subject 2026；日本名次是在該學科 QS 榜單內日本大學之間的名次，目前只補上資訊與化學，其他學科請以 QS 官網為準。</p></div>` : ''}
         ${(r.strengths || []).length || (r.weaknesses || []).length ? `<div class="pc">
           ${(r.strengths || []).length ? `<div class="p"><div class="lab">優點</div><ul>${li(r.strengths)}</ul></div>` : ''}
           ${(r.weaknesses || []).length ? `<div class="c"><div class="lab">缺點</div><ul>${li(r.weaknesses)}</ul></div>` : ''}

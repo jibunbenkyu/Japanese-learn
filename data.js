@@ -370,7 +370,7 @@ const RESOURCES = [
       { subject: "商學／管理", worldRank: "72", japanRank: null },
       { subject: "法律", worldRank: "24", japanRank: null },
       { subject: "政治／國際關係", worldRank: "=37", japanRank: null },
-      { subject: "資訊／計算機", worldRank: "41", japanRank: null },
+      { subject: "資訊／計算機", worldRank: "41", japanRank: "2" },
       { subject: "AI／資料科學", worldRank: "=23", japanRank: null },
       { subject: "工程", worldRank: "18", japanRank: null },
       { subject: "數學", worldRank: "26", japanRank: null },
@@ -415,7 +415,7 @@ const RESOURCES = [
       { subject: "商學／管理", worldRank: "151-200", japanRank: null },
       { subject: "法律", worldRank: "=56", japanRank: null },
       { subject: "政治／國際關係", worldRank: "=84", japanRank: null },
-      { subject: "資訊／計算機", worldRank: "=95", japanRank: null },
+      { subject: "資訊／計算機", worldRank: "=95", japanRank: "3" },
       { subject: "AI／資料科學", worldRank: "51-100", japanRank: null },
       { subject: "工程", worldRank: "50", japanRank: null },
       { subject: "數學", worldRank: "=58", japanRank: null },
@@ -458,7 +458,7 @@ const RESOURCES = [
       { subject: "經濟學", worldRank: "=139", japanRank: null },
       { subject: "商學／管理", worldRank: "201-250", japanRank: null },
       { subject: "法律", worldRank: "251-300", japanRank: null },
-      { subject: "資訊／計算機", worldRank: "=183", japanRank: null },
+      { subject: "資訊／計算機", worldRank: "=183", japanRank: "5" },
       { subject: "工程", worldRank: "=109", japanRank: null },
       { subject: "數學", worldRank: "151-200", japanRank: null },
       { subject: "醫學", worldRank: "141", japanRank: null },
@@ -582,7 +582,7 @@ const RESOURCES = [
       { subject: "經典學／古代史", worldRank: "51-150", japanRank: "7" },
       { subject: "解剖與生理", worldRank: "101-200", japanRank: "3" },
       { subject: "發展研究", worldRank: "101-150", japanRank: "3" },
-      { subject: "資訊／計算機", worldRank: "301-350", japanRank: null },
+      { subject: "資訊／計算機", worldRank: "301-350", japanRank: "8–11" },
       { subject: "工程", worldRank: null, japanRank: null },
       { subject: "數學", worldRank: null, japanRank: null },
       { subject: "醫學", worldRank: null, japanRank: null },
@@ -624,7 +624,7 @@ const RESOURCES = [
       { subject: "商學／管理", worldRank: "451-500", japanRank: null },
       { subject: "法律", worldRank: "301-350", japanRank: null },
       { subject: "政治／國際關係", worldRank: "251-300", japanRank: null },
-      { subject: "資訊／計算機", worldRank: "201-250", japanRank: null },
+      { subject: "資訊／計算機", worldRank: "201-250", japanRank: "7" },
       { subject: "AI／資料科學", worldRank: "101-200", japanRank: null },
       { subject: "工程", worldRank: "89", japanRank: null },
       { subject: "數學", worldRank: "151-200", japanRank: null },
@@ -665,9 +665,9 @@ const RESOURCES = [
     fields: [{ name: "文學", worldRank: null, japanRank: null }, { name: "教育", worldRank: null, japanRank: null }, { name: "法律", worldRank: null, japanRank: null }, { name: "經濟", worldRank: null, japanRank: null }, { name: "理工", worldRank: null, japanRank: null }, { name: "資訊", worldRank: null, japanRank: null }, { name: "農學", worldRank: null, japanRank: null }, { name: "醫學", worldRank: null, japanRank: null }, { name: "獸醫", worldRank: null, japanRank: null }],
     qsRankings: [
       { subject: "經濟學", worldRank: "551-700", japanRank: null },
-      { subject: "資訊／計算機", worldRank: "551-600", japanRank: null },
+      { subject: "資訊／計算機", worldRank: "551-600", japanRank: "13" },
       { subject: "工程", worldRank: "=169", japanRank: null },
-      { subject: "化學", worldRank: "87", japanRank: null },
+      { subject: "化學", worldRank: "87", japanRank: "5" },
       { subject: "自然科學", worldRank: "=117", japanRank: null },
       { subject: "材料科學", worldRank: "151-200", japanRank: null },
       { subject: "生物科學", worldRank: "=193", japanRank: null },
@@ -705,9 +705,9 @@ const RESOURCES = [
     subcategory: ["大學"],
     fields: [{ name: "文學", worldRank: null, japanRank: null }, { name: "教育", worldRank: null, japanRank: null }, { name: "法律", worldRank: null, japanRank: null }, { name: "經濟", worldRank: null, japanRank: null }, { name: "商管", worldRank: null, japanRank: null }, { name: "理工", worldRank: null, japanRank: null }, { name: "資訊", worldRank: null, japanRank: null }, { name: "醫學", worldRank: null, japanRank: null }, { name: "農學", worldRank: null, japanRank: null }],
     qsRankings: [
-      { subject: "資訊／計算機", worldRank: "301-350", japanRank: null },
+      { subject: "資訊／計算機", worldRank: "301-350", japanRank: "8–11" },
       { subject: "工程", worldRank: "125", japanRank: null },
-      { subject: "化學", worldRank: "=114", japanRank: null },
+      { subject: "化學", worldRank: "=114", japanRank: "7" },
       { subject: "物理", worldRank: "151-200", japanRank: null },
     ],
     level: "52.5～67.5",
@@ -782,7 +782,7 @@ const RESOURCES = [
     fields: [{ name: "政治", worldRank: null, japanRank: null }, { name: "經濟", worldRank: null, japanRank: null }, { name: "商管", worldRank: null, japanRank: null }, { name: "法律", worldRank: null, japanRank: null }, { name: "文學", worldRank: null, japanRank: null }, { name: "國際", worldRank: null, japanRank: null }, { name: "社會科學", worldRank: null, japanRank: null }, { name: "理工", worldRank: null, japanRank: null }, { name: "資訊", worldRank: null, japanRank: null }],
     qsRankings: [
       { subject: "管理", worldRank: "=109", japanRank: null },
-      { subject: "資訊／計算機", worldRank: "=149", japanRank: null },
+      { subject: "資訊／計算機", worldRank: "=149", japanRank: "4" },
       { subject: "AI／資料科學", worldRank: "101-200", japanRank: null },
       { subject: "工程", worldRank: "=184", japanRank: null },
       { subject: "數學", worldRank: "151-200", japanRank: null },
@@ -828,7 +828,7 @@ const RESOURCES = [
       { subject: "商學／管理", worldRank: "138", japanRank: null },
       { subject: "法律", worldRank: "101-150", japanRank: null },
       { subject: "政治／國際關係", worldRank: "101-150", japanRank: null },
-      { subject: "資訊／計算機", worldRank: "194", japanRank: null },
+      { subject: "資訊／計算機", worldRank: "194", japanRank: "6" },
       { subject: "AI／資料科學", worldRank: "101-200", japanRank: "3" },
       { subject: "工程", worldRank: "151-200", japanRank: null },
       { subject: "生物科學", worldRank: "251-300", japanRank: null },
@@ -961,7 +961,7 @@ const RESOURCES = [
         {
             "subject": "化學",
             "worldRank": "251-300",
-            "japanRank": null
+            "japanRank": "9–10"
         },
         {
             "subject": "材料科學",
@@ -976,7 +976,7 @@ const RESOURCES = [
         {
             "subject": "資訊／計算機",
             "worldRank": "301-350",
-            "japanRank": null
+            "japanRank": "8–11"
         },
         {
             "subject": "環境科學",
@@ -1082,7 +1082,7 @@ const RESOURCES = [
         {
             "subject": "化學",
             "worldRank": "451-500",
-            "japanRank": null
+            "japanRank": "12–14"
         },
         {
             "subject": "數學",
@@ -1356,7 +1356,7 @@ const RESOURCES = [
         {
             "subject": "化學",
             "worldRank": "451-500",
-            "japanRank": null
+            "japanRank": "12–14"
         },
         {
             "subject": "物理",
@@ -1491,7 +1491,7 @@ const RESOURCES = [
         {
             "subject": "化學",
             "worldRank": "451-500",
-            "japanRank": null
+            "japanRank": "12–14"
         },
         {
             "subject": "工程",
@@ -1581,7 +1581,7 @@ const RESOURCES = [
         {
             "subject": "化學",
             "worldRank": "551-600",
-            "japanRank": null
+            "japanRank": "18"
         },
         {
             "subject": "物理",
@@ -1683,7 +1683,7 @@ const RESOURCES = [
         {
             "subject": "化學",
             "worldRank": "601-700",
-            "japanRank": null
+            "japanRank": "19–21"
         },
         {
             "subject": "資訊／計算機",
@@ -2519,7 +2519,7 @@ const RESOURCES = [
         {
             "subject": "化學",
             "worldRank": "601-700",
-            "japanRank": null
+            "japanRank": "19–21"
         },
         {
             "subject": "物理",
@@ -3688,6 +3688,196 @@ const RESOURCES = [
 
 
 /* ===== DATA_BATCH_2: 第二批大學資料（37–46），原樣內嵌，由 app.js 合併進 RESOURCES ===== */
+/* ===================== QS 世界大學排名 2027（日本國內名次） =====================
+   來源：QS World University Rankings 2027（2026 年 6 月公布，https://www.topuniversities.com/world-university-rankings）。
+   本站數據取自第三方彙整頁 xuanxiao.org（2026-11-03 擷取，該站聲明與 QS 發布內容一致），請以 QS 官網為準。
+   world：世界名次或級距；japan：在 QS 榜單內日本大學中的名次（同級距者以範圍表示）；tie：並列名次。
+   值為 null 表示在 QS 2027 榜單中未查到。 */
+const QS_OVERALL_2027 = {
+  "u-tokyo": {
+    "world": "39",
+    "japan": "1",
+    "tie": false
+  },
+  "kyoto-u": {
+    "world": "64",
+    "japan": "2",
+    "tie": false
+  },
+  "osaka-u": {
+    "world": "95",
+    "japan": "3",
+    "tie": false
+  },
+  "isct": {
+    "world": "97",
+    "japan": "4",
+    "tie": true
+  },
+  "tohoku-u": {
+    "world": "102",
+    "japan": "5",
+    "tie": false
+  },
+  "nagoya-u": {
+    "world": "156",
+    "japan": "6",
+    "tie": false
+  },
+  "kyushu-u": {
+    "world": "171",
+    "japan": "7",
+    "tie": false
+  },
+  "hokudai": {
+    "world": "179",
+    "japan": "8",
+    "tie": true
+  },
+  "waseda": {
+    "world": "201",
+    "japan": "9",
+    "tie": true
+  },
+  "keio": {
+    "world": "213",
+    "japan": "10",
+    "tie": true
+  },
+  "tsukuba": {
+    "world": "351",
+    "japan": "11",
+    "tie": true
+  },
+  "hiroshima": {
+    "world": "481",
+    "japan": "12",
+    "tie": true
+  },
+  "kobe-u": {
+    "world": "504",
+    "japan": "13",
+    "tie": true
+  },
+  "hit-u": {
+    "world": "575",
+    "japan": "14",
+    "tie": true
+  },
+  "ritsumeikan": {
+    "world": "683",
+    "japan": "15",
+    "tie": true
+  },
+  "chiba": {
+    "world": "851-900",
+    "japan": "16–17",
+    "tie": false
+  },
+  "tus": {
+    "world": "851-900",
+    "japan": "16–17",
+    "tie": false
+  },
+  "osaka-metropolitan": {
+    "world": "901-950",
+    "japan": "18",
+    "tie": false
+  },
+  "kanazawa": {
+    "world": "951-1000",
+    "japan": "19–22",
+    "tie": false
+  },
+  "nagasaki": {
+    "world": "951-1000",
+    "japan": "19–22",
+    "tie": false
+  },
+  "sophia": {
+    "world": "951-1000",
+    "japan": "19–22",
+    "tie": false
+  },
+  "tuat": {
+    "world": "951-1000",
+    "japan": "19–22",
+    "tie": false
+  },
+  "kumamoto": {
+    "world": "1001-1200",
+    "japan": "23–28",
+    "tie": false
+  },
+  "okayama": {
+    "world": "1001-1200",
+    "japan": "23–28",
+    "tie": false
+  },
+  "tokyo-metropolitan": {
+    "world": "1001-1200",
+    "japan": "23–28",
+    "tie": false
+  },
+  "yokohama-city": {
+    "world": "1001-1200",
+    "japan": "23–28",
+    "tie": false
+  },
+  "ynu": {
+    "world": "1001-1200",
+    "japan": "23–28",
+    "tie": false
+  },
+  "icu": {
+    "world": "1201-1400",
+    "japan": "29–36",
+    "tie": false
+  },
+  "kagoshima": {
+    "world": "1201-1400",
+    "japan": "29–36",
+    "tie": false
+  },
+  "shinshu": {
+    "world": "1201-1400",
+    "japan": "29–36",
+    "tie": false
+  },
+  "doshisha": {
+    "world": "1401+",
+    "japan": "37–40",
+    "tie": false
+  },
+  "kyoto-institute-technology": {
+    "world": "1401+",
+    "japan": "37–40",
+    "tie": false
+  },
+  "meiji": {
+    "world": "1401+",
+    "japan": "37–40",
+    "tie": false
+  },
+  "uec-tokyo": null,
+  "saitama": null,
+  "mie": null,
+  "shiga": null,
+  "kwansei-gakuin": null,
+  "aoyama-gakuin": null,
+  "chuo": null,
+  "hosei": null,
+  "rikkyo": null,
+  "kansai": null,
+  "tokyo-gakugei": null,
+  "tokyo-university-marine-science-technology": null,
+  "tufs": null,
+  "apu": null,
+  "aiu": null,
+  "gakushuin": null,
+  "kindai": null
+};
+
 const universities_37_46 = [
 
   // =========================================================
@@ -5009,6 +5199,199 @@ const universities_37_46 = [
         }
       }
     }
+  },
+  {
+    "id": "apu",
+    "name": "立命館亞洲太平洋大學（APU）",
+    "officialUrl": "https://en.apu.ac.jp/home/",
+    "admissionYear": 2027,
+    "admissionType": "外国人留学生（私費）學部入學選拔（英語基準／日語基準）",
+    "admissionStatus": "published",
+    "admissionUrl": "https://admissions.apu.ac.jp/admissions/application_schedule/",
+    "admissionPdfUrl": "https://admissions.apu.ac.jp/resource/ln/e8d8183306f74942855a7aca6c1bb0f05e4bfee4/ApplicationHandbook_UG_ENG_27_4.pdf",
+    "admissionNote": "2027年4月入學的申請梯次已截止；2027年9月入學的GFA3（2026/10/29–12/9）、GFA4（2026/12/10–2027/1/20）、GFA5（2027/1/21–3/3）仍可申請（海外居住者梯次，以日本時間為準）。台灣未被列為獨立地區，是否適用此梯次請向APU台灣辦事處確認；學測是否被接受，申請手冊未提及。官網另有舊版手冊（_27_3）與此版內容略有出入，請以官網下載頁最新版為準。",
+    "category": [
+      "日本留學"
+    ],
+    "subcategory": [
+      "大學"
+    ],
+    "fields": [
+      "亞太研究",
+      "國際管理",
+      "永續經營與觀光"
+    ],
+    "level": "50.0～52.5",
+    "priceDetail": "私立大學。入學金200,000日圓；一年級年間學費1,455,000日圓，二至四年級每年1,655,000日圓（2027年度入學）。另有針對國際學生的學費減免獎學金，可減免30%～100%，需另外申請並符合續領條件。",
+    "target": "想在英語與日語雙語的多元文化環境學習，並對亞太研究、商管或永續觀光有興趣的學生。",
+    "strengths": [
+      "可在台灣用英語或日語基準完成線上申請，不必先到日本應考。",
+      "申請可用IELTS、TOEFL、SAT、IB等多種成績，不一定要有日語能力。",
+      "官方資料指出國際學生約占一半，學費減免獎學金比例明確（30%～100%）。"
+    ],
+    "weaknesses": [
+      "校區在大分縣別府市，離東京與大阪等大都市較遠。",
+      "二年級起學費每年約165萬日圓，加上入學金與住宿費，初期負擔不低。",
+      "台灣專屬梯次與學測採計情形在手冊中沒有明說，需向校方確認。"
+    ],
+    "tags": [
+      "APU",
+      "立命館亞洲太平洋大學",
+      "私立",
+      "別府",
+      "大分",
+      "英語授課",
+      "國際學生",
+      "獎學金"
+    ]
+  },
+  {
+    "id": "aiu",
+    "name": "國際教養大學（AIU）",
+    "officialUrl": "https://web.aiu.ac.jp/en/",
+    "admissionYear": 2027,
+    "admissionType": "國際入試（2027年9月入學，名額5名，專願）",
+    "admissionStatus": "published",
+    "admissionUrl": "https://admission.aiu.ac.jp/en/ug/international/",
+    "admissionPdfUrl": "https://admission.aiu.ac.jp/wp/wp-content/uploads/2026/08/2027-International-Admissions-Examination-Guide.pdf",
+    "admissionNote": "2027年度起原本的外國人留學生入試Ⅰ（4月）與Ⅱ（9月）已廢止，改為只有9月入學、名額5名、專願的「國際入試」；因此2027年4月入學沒有外國人專用管道。本年度申請期間（2026/10/1–10/9）已截止，之後年度請再查官網。台灣考生資格為高中畢業證書加學測或分科測驗成績，另需英語成績或英語教育證明；是否可在台灣完成申請，要項未明寫，請洽校方。",
+    "category": [
+      "日本留學"
+    ],
+    "subcategory": [
+      "大學"
+    ],
+    "fields": [
+      "國際教養",
+      "全球商務",
+      "全球研究"
+    ],
+    "level": "62.5～70.0",
+    "priceDetail": "公立大學法人。2026年度入學金423,000日圓（秋田縣內居民282,000日圓）；年間學費896,000日圓；另需住宿一年（宿舍費約622,900日圓）。2027年度正式金額與外國學生專屬減免，官方頁面尚未找到。",
+    "target": "英語已達TOEFL iBT 61或IELTS 6.0以上、想在全英語環境學習國際教養並接受義務留學與住宿的學生。",
+    "strengths": [
+      "課程全部以英語授課，教師約半數為外國人。",
+      "義務至少一年到合作大學留學，合作校達211所。",
+      "台灣學生資格明確：用學測或分科測驗成績加英語成績即可，不需要EJU，也不需要日語能力證明。"
+    ],
+    "weaknesses": [
+      "2027年度外國學生管道縮小，只剩9月入學、名額5名、專願，不能併願。",
+      "學費加宿舍費，一年約150萬日圓以上，外國學生可用的減免不明。",
+      "義務住宿一年，留學期間部分合作校可能另外收費。"
+    ],
+    "tags": [
+      "AIU",
+      "國際教養大學",
+      "公立",
+      "秋田",
+      "英語授課",
+      "義務留學",
+      "學測"
+    ]
+  },
+  {
+    "id": "gakushuin",
+    "name": "學習院大學",
+    "officialUrl": "https://www.univ.gakushuin.ac.jp/",
+    "admissionYear": 2027,
+    "admissionType": "外国人留学生入試／外国高等学校出身者入試",
+    "admissionStatus": "published",
+    "admissionUrl": "https://www.univ.gakushuin.ac.jp/",
+    "admissionPdfUrl": "https://www.univ.gakushuin.ac.jp/admissions/docs/foreigner_guide2027.pdf",
+    "admissionNote": "此PDF為令和9年度（2027年4月入學）外国人留学生入試要項，招收經濟、文、國際文化交流三學部（法、理、國際社會科學部不在此要項內）；考試全部在東京，台灣沒有考場。另有「外國高校出身者・歸國生」要項：https://www.univ.gakushuin.ac.jp/admissions/docs/2027_overseas_guide.pdf 。要項所載的是2026年度實施日程（已結束），下一輪日程尚未公布。官方入試入口頁本站未能開啟，連結為學部官網首頁。",
+    "category": [
+      "日本留學"
+    ],
+    "subcategory": [
+      "大學"
+    ],
+    "fields": [
+      "法學",
+      "經濟",
+      "經營",
+      "文學",
+      "理學",
+      "國際社會科學",
+      "國際文化交流"
+    ],
+    "level": "55.0～60.0",
+    "priceDetail": "私立大學。入學金200,000日圓；一年級合計約136萬～193萬日圓（依學部，理學部最高），二年級起約116萬～173萬日圓；部分學科另有實驗費等。外國留學生可申請授業料減免10%，以及最高30萬日圓的國際留學生獎學金（需持「留學」在留資格）。",
+    "target": "日語已達N1程度、想讀人文或社會科學，且能到東京親自應考的學生。",
+    "strengths": [
+      "留學生入試的國際文化交流學部提供EJU、指定日語學校推薦、一般考試三種路線。",
+      "有留學生專屬的授業料減免與獎學金。",
+      "法、經濟、文、理、國際社會科學、國際文化交流等學科齊全。"
+    ],
+    "weaknesses": [
+      "外国人留學生入試只有3個學部招生，且考試全在東京，無法在台灣完成。",
+      "日語門檻高：文學部為日語筆試與面試，國際文化交流學部需JLPT N1或同等程度。",
+      "理學部第一年學費約193萬日圓，國際社會科學部另需負擔出國留學費用。"
+    ],
+    "tags": [
+      "學習院",
+      "Gakushuin",
+      "私立",
+      "東京",
+      "目白",
+      "EJU",
+      "文學",
+      "經濟"
+    ]
+  },
+  {
+    "id": "kindai",
+    "name": "近畿大學",
+    "officialUrl": "https://www.kindai.ac.jp/",
+    "admissionYear": 2027,
+    "admissionType": "外国人留学生入学試験／渡日前入学許可入学試験",
+    "admissionStatus": "published",
+    "admissionUrl": "https://www.kindai.ac.jp/campus-life/international-exchange/foreign-student/exam/",
+    "admissionPdfUrl": "https://www.kindai.ac.jp/files/campus-life/international-exchange/foreign-student/exam/department/entrance-exam-a.pdf",
+    "admissionNote": "此PDF為2027年度外国人留学生入學試驗要項（14個學部各若干名）；渡日前入學許可入試要項：https://www.kindai.ac.jp/files/campus-life/international-exchange/exam/department/entrance-exam-c.pdf 。前期（2026/8/24–27出願、10/10考試）與渡日前入試的申請期間已過，目前只剩僅限日本國內居住者的後期（2027/1/8–14出願）。成績只採用EJU，部分學部設有分數門檻；入口頁本站未能開啟內文，請以要項PDF為準。留學生專屬學費減免在官方資料中未找到。",
+    "category": [
+      "日本留學"
+    ],
+    "subcategory": [
+      "大學"
+    ],
+    "fields": [
+      "法學",
+      "經濟",
+      "經營",
+      "理工",
+      "建築",
+      "藥學",
+      "文藝",
+      "總合社會",
+      "國際",
+      "情報",
+      "農學",
+      "生物理工",
+      "工學",
+      "產業理工"
+    ],
+    "level": "35.0～65.0",
+    "priceDetail": "私立大學。入學金多為250,000日圓；初年度年間納入金依學部約122萬～248萬日圓（法、經濟、經營、總合社會約145萬，理工、建築、情報、農、生物理工約184萬，藥學醫療藥學科約248萬），醫學部約709萬日圓。國際學部的海外留學期間費用另計。",
+    "target": "想在關西就讀大型綜合私立大學，願意準備EJU，並對水產與農、理工、經濟或經營有興趣的學生。",
+    "strengths": [
+      "規模大、學部齊全，官方列出16個學部，另有短期大學部。",
+      "設有「渡日前入學許可」入試，面試為線上口頭試問，理論上可不先來日本。",
+      "水產研究實績知名，2002年達成世界首次黑鮪完全養殖（媒體報導），農學部設有水產學科。"
+    ],
+    "weaknesses": [
+      "台灣考生的實際入試窗口很窄：前期與渡日前入試在8月底出願，後期僅限已在日本者。",
+      "多數學部須有EJU日語及其他科目分數，並設有分數門檻，情報與農學部另需英語證明。",
+      "學部分散在大阪、奈良、和歌山、廣島、福岡等校區，且部分學部學費偏高。"
+    ],
+    "tags": [
+      "近畿大學",
+      "Kindai",
+      "私立",
+      "大阪",
+      "關西",
+      "EJU",
+      "水產",
+      "農學"
+    ]
   }
-
 ];
