@@ -189,3 +189,19 @@ dialog.detail::backdrop{background:rgba(22,36,63,.62);-webkit-backdrop-filter:bl
 @supports (height:1svh){.results{bottom:calc(100svh - var(--search-top) + 44px)}}
 .qs-overall .big{font-size:1.45rem}
 .qs-overall .note-src a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+
+/* ---- 版面優化 ---- */
+.intro{transition:opacity .2s var(--ease)}
+.stage.has-results .intro{opacity:.14;pointer-events:none}
+@media (max-width:900px){.stage.has-results .intro{opacity:0}}
+.links{position:sticky;bottom:0;z-index:1;margin:0 -1.2rem -1.3rem;padding:.8rem 1.2rem 1rem;background:var(--paper-card);box-shadow:0 -10px 14px -10px rgba(30,27,22,.18)}
+.sheet-body > .note-src.disclaimer{margin-top:.2rem}
+.qs-overall .txt{margin-top:.2rem}
+@media (max-width:520px){
+  .qs-overall .kv{grid-template-columns:1fr 1fr}
+  .qs-overall .big{font-size:1.25rem}
+}
+@media (max-width:640px){
+  .giant{top:60px;font-size:min(18dvh,19vw)}
+}
+.rail-btn .l{text-wrap:balance}

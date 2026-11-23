@@ -150,11 +150,13 @@ function haystack(r){
 }
 function renderResults(){
   const term = q.value.trim().toLowerCase();
-  if (!term && activeItem == null){ resultsEl.hidden = true; resultsEl.innerHTML = ''; return; }
+  if (!term && activeItem == null){ resultsEl.hidden = true; resultsEl.innerHTML = ''; stage.classList.remove('has-results'); return; }
   let list = RESOURCES;
   if (activeItem != null) list = inCat(CATS[active].key).filter(rails[active][activeItem].test);
   if (term) list = list.filter(r => haystack(r).includes(term));
+  if (term && activeItem == null){ const ck = CATS[active].key; list = [...list.filter(r => r.category.includes(ck)), ...list.filter(r => !r.category.includes(ck))]; }
   resultsEl.hidden = false;
+  stage.classList.add('has-results');
   const limit = activeItem != null ? list.length : 6;
   resultsEl.innerHTML = list.length
     ? `<p class="rc">符合 ${list.length} 筆${list.length > limit ? `，先列出前 ${limit} 筆` : ''}，點選卡片看詳細資訊</p>` + list.slice(0, limit).map(r => `
@@ -182,8 +184,7 @@ function openDetail(id, trigger){
   const qsBlock = !isUni || !qo ? '' : `<div class="qs-overall"><div class="lab">QS 世界大學排名（2027）</div>${qo.none
     ? `<p class="txt">QS 2027 榜單中未查到這所學校。</p>`
     : `<div class="kv"><div><div class="big">日本第 ${esc(qo.japan)} 名</div><p class="txt">日本國內名次${/[–-]/.test(qo.japan) ? '（同級距，未細分）' : ''}</p></div><div><div class="big">${esc(fmtQs(qo))}</div><p class="txt">世界${/[-+]/.test(qo.world) ? '級距' : '名次'}</p></div></div>`}
-    ${(r.qsRankings || []).length ? '<p class="note-src">整校名次不代表各學部的實力，不同學部差異很大，請同時參考下方的學科排名。</p>' : '<p class="note-src">整校名次不代表各學部的實力，不同學部差異很大。</p>'}
-    <p class="note-src">資料來源：<a href="https://www.topuniversities.com/world-university-rankings" target="_blank" rel="noopener noreferrer">QS World University Rankings 2027</a>；本站取自第三方彙整頁 xuanxiao.org（2026-11-03），請以 QS 官網為準。</p></div>`;
+    <p class="note-src">整校名次不代表各學部的實力${(r.qsRankings || []).length ? '，請參考下方的學科排名' : ''}。資料來源：<a href="https://www.topuniversities.com/world-university-rankings" target="_blank" rel="noopener noreferrer">QS World University Rankings 2027</a>；本站取自第三方彙整頁 xuanxiao.org（2026-11-03），請以 QS 官網為準。</p></div>`;
   const reg = (r.registrationMethod || r.registrationPeriod)
     ? `<div class="kv">${r.registrationMethod ? `<div><div class="lab">報名方式</div><p class="txt">${esc(r.registrationMethod)}</p></div>` : ''}${r.registrationPeriod ? `<div><div class="lab">報名時間</div><p class="txt">${esc(r.registrationPeriod)}</p></div>` : ''}</div>` : '';
   detail.innerHTML = `
@@ -216,12 +217,12 @@ function openDetail(id, trigger){
           ${(r.strengths || []).length ? `<div class="p"><div class="lab">優點</div><ul>${li(r.strengths)}</ul></div>` : ''}
           ${(r.weaknesses || []).length ? `<div class="c"><div class="lab">缺點</div><ul>${li(r.weaknesses)}</ul></div>` : ''}
         </div>` : ''}
+        <p class="note-src disclaimer">資料來源可能有誤，如有興趣請親自至官網驗證。</p>
         <div class="links">
           ${r.officialUrl ? `<a class="btn main" href="${esc(r.officialUrl)}" target="_blank" rel="noopener noreferrer">前往官網</a>` : ''}
           ${r.admissionPdfUrl ? `<a class="btn line" href="${esc(r.admissionPdfUrl)}" target="_blank" rel="noopener noreferrer">入學簡章 PDF</a>` : ''}
           ${(r.extraLinks || []).map(l => `<a class="btn line" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer">${esc(l.label)}</a>`).join('')}
         </div>
-        <p class="note-src disclaimer">資料來源可能有誤，如有興趣請親自至官網驗證。</p>
       </div>
     </article>`;
   detail.showModal();
